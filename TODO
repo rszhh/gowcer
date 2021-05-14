@@ -1,0 +1,17 @@
+DONE
+-------------------------
+fields.go
+int -> uint8
+
+base.go
+LoggerType -> LogType
+
+
+
+TODO
+------------------------
+base.go
+Name() LogType
+
+logger.go
+每次都是使用的logrus
