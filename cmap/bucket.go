@@ -77,6 +77,7 @@ func (b *bucket) Put(p Pair, lock sync.Locker) (bool, error) {
 	atomic.AddUint64(&b.size, 1)
 	return true, nil
 }
+
 func (b *bucket) Get(key string) Pair {
 	firstPair := b.GetFirstPair()
 	if firstPair == nil {

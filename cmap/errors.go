@@ -49,3 +49,13 @@ func newPairRedistributorError(errMsg string) PairRedistributorError {
 func (pre PairRedistributorError) Error() string {
 	return pre.msg
 }
+
+// 以上三种错误都实现了ERROR方法，相当于实现了error接口类型
+// 这是因为在builtin.go里有一个接口声明：
+// The error built-in interface type is the conventional interface for
+// representing an error condition, with the nil value representing no error.
+/*
+    type error interface {
+	    Error() string
+    }
+*/
