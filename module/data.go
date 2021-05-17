@@ -2,41 +2,38 @@ package module
 
 import "net/http"
 
-// Data 数据的接口类型
+// Data 代表数据的接口类型
 type Data interface {
+	// Valid 用于判断数据是否有效
 	Valid() bool
 }
 
 // 使用Data接口将下面三个类型归为一类
 
-// Request 数据请求的类型
+// Request 代表数据请求的类型
 type Request struct {
-	// httpReq HTTP请求
+	// httpReq 代表HTTP请求
 	httpReq *http.Request
-	// depth 请求的深度
-	// 代表一个请求的深度值，用于网络爬虫的自动停止
+	// depth 代表请求的深度
 	depth uint32
 }
 
-// NewRequest 创建一个新的请求实例
+// NewRequest 用于创建一个新的请求实例
 func NewRequest(httpReq *http.Request, depth uint32) *Request {
-	return &Request{
-		httpReq: httpReq,
-		depth:   depth,
-	}
+	return &Request{httpReq: httpReq, depth: depth}
 }
 
-// HTTPReq 获取HTTP请求
+// HTTPReq 用于获取HTTP请求
 func (req *Request) HTTPReq() *http.Request {
 	return req.httpReq
 }
 
-// Depth 获取当前请求的深度
-func (req *Request) Depth() *uint32 {
-	return req.Depth()
+// Depth 用于获取请求的深度
+func (req *Request) Depth() uint32 {
+	return req.depth
 }
 
-// Valid 用于判断当前请求是否有效
+// Valid 用于判断请求是否有效
 func (req *Request) Valid() bool {
 	return req.httpReq != nil && req.httpReq.URL != nil
 }

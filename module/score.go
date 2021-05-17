@@ -15,6 +15,8 @@ func CalculateScoreSimple(counts Counts) uint64 {
 // 结果值代表是否更新了评分
 func SetScore(module Module) bool {
 	calculator := module.ScoreCalculator()
+	// 到目前为止，参数moudle的ScoreCalculator要么是nil，要么是CalculateScoreSimple
+	// 所以calculator最终都是被赋值成CalculateScoreSimple这个函数
 	if calculator == nil {
 		calculator = CalculateScoreSimple
 	}

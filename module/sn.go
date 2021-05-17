@@ -5,6 +5,8 @@ import (
 	"sync"
 )
 
+// sn是每个组件实例的唯一ID：MID的重要组成部分中的其中一个
+
 // SNGenertor 代表序列号生成器的接口类型
 type SNGenertor interface {
 	// Start 用于获取预设的最小序列号

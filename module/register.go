@@ -7,36 +7,36 @@ import (
 	"github.com/rszhh/gowcer/errors"
 )
 
-// Registrar 代表组件注册器的接口。
+// Registrar 代表组件注册器的接口
 type Registrar interface {
-	// Register 用于注册组件实例。
+	// Register 用于注册组件实例
 	Register(module Module) (bool, error)
-	// Unregister 用于注销组件实例。
-	Unregister(mid MID) (bool, error)
-	// Get 用于获取一个指定类型的组件的实例。
-	// 本函数应该基于负载均衡策略返回实例。
+	// UnRegister 用于注销组件实例
+	UnRegister(mid MID) (bool, error)
+	// Get 用于获取一个指定类型的组件的实例
+	// 本函数应该基于负载均衡策略返回实例
 	Get(moduleType Type) (Module, error)
-	// GetAllByType 用于获取指定类型的所有组件实例。
+	// GetAllByType 用于获取指定类型的所有组件实例
 	GetAllByType(moduleType Type) (map[MID]Module, error)
-	// GetAll 用于获取所有组件实例。
+	// GetAll 用于获取所有组件实例
 	GetAll() map[MID]Module
-	// Clear 会清除所有的组件注册记录。
+	// Clear 会清除所有的组件注册记录
 	Clear()
 }
 
-// NewRegistrar 用于创建一个组件注册器的实例。
+// myRegistrar 代表组件注册器的实现类型
+type myRegistrar struct {
+	// moduleTypeMap 代表组件类型与对应组件实例的映射
+	moduleTypeMap map[Type]map[MID]Module
+	// rwlock 代表组件注册专用读写锁
+	rwlock sync.RWMutex
+}
+
+// NewRegistrar 用于创建一个组件注册器的实例
 func NewRegistrar() Registrar {
 	return &myRegistrar{
 		moduleTypeMap: map[Type]map[MID]Module{},
 	}
-}
-
-// myRegistrar 代表组件注册器的实现类型。
-type myRegistrar struct {
-	// moduleTypeMap 代表组件类型与对应组件实例的映射。
-	moduleTypeMap map[Type]map[MID]Module
-	// rwlock 代表组件注册专用读写锁。
-	rwlock sync.RWMutex
 }
 
 func (registrar *myRegistrar) Register(module Module) (bool, error) {
@@ -67,7 +67,7 @@ func (registrar *myRegistrar) Register(module Module) (bool, error) {
 	return true, nil
 }
 
-func (registrar *myRegistrar) Unregister(mid MID) (bool, error) {
+func (registrar *myRegistrar) UnRegister(mid MID) (bool, error) {
 	parts, err := SplitMID(mid)
 	if err != nil {
 		return false, err
@@ -85,8 +85,8 @@ func (registrar *myRegistrar) Unregister(mid MID) (bool, error) {
 	return deleted, nil
 }
 
-// Get 用于获取一个指定类型的组件的实例。
-// 本函数会基于负载均衡策略返回实例。
+// Get 用于获取一个指定类型的组件的实例
+// 本函数会基于负载均衡策略返回实例，使得同一类型的多个组件实例有相对平均的机会被返回
 func (registrar *myRegistrar) Get(moduleType Type) (Module, error) {
 	modules, err := registrar.GetAllByType(moduleType)
 	if err != nil {
@@ -95,8 +95,10 @@ func (registrar *myRegistrar) Get(moduleType Type) (Module, error) {
 	minScore := uint64(0)
 	var selectedModule Module
 	for _, module := range modules {
+		// 每次选择一个实例的时都需要先对实例的Socre进行更新，然后比较
 		SetScore(module)
 		score := module.Score()
+		// 最终选择一个Score最小的moudle
 		if minScore == 0 || score < minScore {
 			selectedModule = module
 			minScore = score
@@ -105,7 +107,7 @@ func (registrar *myRegistrar) Get(moduleType Type) (Module, error) {
 	return selectedModule, nil
 }
 
-// GetAllByType 用于获取指定类型的所有组件实例。
+// GetAllByType 用于获取指定类型的所有组件实例
 func (registrar *myRegistrar) GetAllByType(moduleType Type) (map[MID]Module, error) {
 	if !LegalType(moduleType) {
 		errMsg := fmt.Sprintf("illegal module type: %s", moduleType)
@@ -124,7 +126,7 @@ func (registrar *myRegistrar) GetAllByType(moduleType Type) (map[MID]Module, err
 	return result, nil
 }
 
-// GetAll 用于获取所有组件实例。
+// GetAll 用于获取所有组件实例
 func (registrar *myRegistrar) GetAll() map[MID]Module {
 	result := map[MID]Module{}
 	registrar.rwlock.RLock()
@@ -137,7 +139,7 @@ func (registrar *myRegistrar) GetAll() map[MID]Module {
 	return result
 }
 
-// Clear 会清除所有的组件注册记录。
+// Clear 会清除所有的组件注册记录
 func (registrar *myRegistrar) Clear() {
 	registrar.rwlock.Lock()
 	defer registrar.rwlock.Unlock()

@@ -9,6 +9,7 @@ import (
 )
 
 // mAddr 代表组件网络地址的类型
+// 用于实现自带的 net.Addr 接口
 type mAddr struct {
 	// network 代表网络协议
 	network string
