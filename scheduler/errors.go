@@ -3,6 +3,7 @@ package scheduler
 import (
 	"github.com/rszhh/gowcer/errors"
 	"github.com/rszhh/gowcer/module"
+	"github.com/rszhh/gowcer/toolkit/buffer"
 )
 
 // genError 用于生成爬虫错误值。

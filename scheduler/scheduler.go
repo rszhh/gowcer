@@ -11,6 +11,7 @@ import (
 	"github.com/rszhh/gowcer/cmap"
 	"github.com/rszhh/gowcer/log"
 	"github.com/rszhh/gowcer/module"
+	"github.com/rszhh/gowcer/toolkit/buffer"
 )
 
 // logger 代表日志记录器。

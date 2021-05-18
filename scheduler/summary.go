@@ -5,6 +5,7 @@ import (
 	"sort"
 
 	"github.com/rszhh/gowcer/module"
+	"github.com/rszhh/gowcer/toolkit/buffer"
 )
 
 // SummaryStruct 代表调度器摘要的结构。
