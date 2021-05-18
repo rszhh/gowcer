@@ -104,5 +104,5 @@ func (buf *myBuffer) Closed() bool {
 	// 	return false
 	// }
 	// return true
-	return atomic.LoadUint32(&buf.closed) == 0
+	return atomic.LoadUint32(&buf.closed) != 0
 }
