@@ -2,6 +2,7 @@ package module
 
 import (
 	"fmt"
+	"math"
 	"sync"
 
 	"github.com/rszhh/gowcer/errors"
@@ -92,18 +93,19 @@ func (registrar *myRegistrar) Get(moduleType Type) (Module, error) {
 	if err != nil {
 		return nil, err
 	}
-	minScore := uint64(0)
+	var score uint64
 	var selectedModule Module
+	var minScore uint64 = math.MaxUint64
 	for _, module := range modules {
-		// 每次选择一个实例的时都需要先对实例的Socre进行更新，然后比较
+		// 每次选择一个实例时都需要先对实例的Socre进行更新之后才能进行比较
 		SetScore(module)
-		score := module.Score()
-		// 最终选择一个Score最小的moudle
-		if minScore == 0 || score < minScore {
+		score = module.Score()
+		if score < minScore {
 			selectedModule = module
 			minScore = score
 		}
 	}
+	// 最终选择一个Score最小的moudle
 	return selectedModule, nil
 }
 

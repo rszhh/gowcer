@@ -53,6 +53,9 @@ func sendError(err error, mid module.MID, errorBufferPool buffer.Pool) bool {
 	if errorBufferPool.Closed() {
 		return false
 	}
+	// 这里新建一个goroutine去put的作用是：
+	// 即使在短时间内发生大量错误，错误通道和错误缓冲池被填满，爬取流程也不会因此而停滞
+	// 但是goroutine的大量增加也会让运行时系统的负担加重
 	go func(crawlerError errors.CrawlerError) {
 		if err := errorBufferPool.Put(crawlerError); err != nil {
 			logger.Warnln("The error buffer pool was closed. Ignore error sending.")

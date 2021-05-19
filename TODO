@@ -9,6 +9,10 @@ LoggerType -> LogType
 reader.go
 ioutil -> io
 
+register.go
+Get()
+
+
 TODO
 ------------------------
 base.go

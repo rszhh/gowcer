@@ -34,6 +34,7 @@ type Module interface {
 	// Score 用于获取当前组件的评分。
 	Score() uint64
 	// 用于设置当前组件的评分。
+	// 实现方法在stub.go中
 	SetScore(score uint64)
 	// ScoreCalculator 用于获取评分计算器。
 	ScoreCalculator() CalculateScore
@@ -51,6 +52,9 @@ type Module interface {
 	// Summary 用于获取组件摘要。
 	Summary() SummaryStruct
 }
+
+// Moudle的实现类型在stub/下
+// 下面三个接口的实现类型在local/下
 
 // Downloader 代表下载器的接口类型。
 // 该接口的实现类型必须是并发安全的！

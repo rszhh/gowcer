@@ -9,7 +9,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/PuerkitoBio/goquery"
 	"github.com/rszhh/gowcer/module"
+	"github.com/rszhh/gowcer/module/local/analyzer"
+	"github.com/rszhh/gowcer/module/local/downloader"
+	"github.com/rszhh/gowcer/module/local/pipeline"
 )
 
 func TestArgsRequest(t *testing.T) {

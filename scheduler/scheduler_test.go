@@ -391,7 +391,7 @@ func TestSendResp(t *testing.T) {
 	}
 	// 测试响应无效的情况。
 	httpReq, _ :=
-		http.NewRequest("GET", "https://github.com/gopcp", nil)
+		http.NewRequest("GET", "https://github.com/rszhh", nil)
 	httpResp := &http.Response{
 		Request: httpReq,
 		Body:    nil,

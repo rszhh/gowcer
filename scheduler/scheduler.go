@@ -44,11 +44,6 @@ type Scheduler interface {
 	Summary() SchedSummary
 }
 
-// NewScheduler 会创建一个调度器实例。
-func NewScheduler() Scheduler {
-	return &myScheduler{}
-}
-
 // myScheduler 代表调度器的实现类型。
 type myScheduler struct {
 	// maxDepth 代表爬取的最大深度。首次请求的深度为0。
@@ -66,6 +61,7 @@ type myScheduler struct {
 	// errorBufferPool 代表错误的缓冲池。
 	errorBufferPool buffer.Pool
 	// urlMap 代表已处理的URL的字典。
+	// 防止对同一URL进行重复处理。
 	urlMap cmap.ConcurrentMap
 	// ctx 代表上下文，用于感知调度器的停止。
 	ctx context.Context
@@ -79,6 +75,11 @@ type myScheduler struct {
 	summary SchedSummary
 }
 
+// NewScheduler 会创建一个调度器实例。
+func NewScheduler() Scheduler {
+	return &myScheduler{}
+}
+
 func (sched *myScheduler) Init(
 	requestArgs RequestArgs,
 	dataArgs DataArgs,
@@ -86,8 +87,7 @@ func (sched *myScheduler) Init(
 	// 检查状态。
 	logger.Info("Check status for initialization...")
 	var oldStatus Status
-	oldStatus, err =
-		sched.checkAndSetStatus(SCHED_STATUS_INITIALIZING)
+	oldStatus, err = sched.checkAndSetStatus(SCHED_STATUS_INITIALIZING)
 	if err != nil {
 		return
 	}
@@ -124,8 +124,7 @@ func (sched *myScheduler) Init(
 	}
 	sched.maxDepth = requestArgs.MaxDepth
 	logger.Infof("-- Max depth: %d", sched.maxDepth)
-	sched.acceptedDomainMap, _ =
-		cmap.NewConcurrentMap(1, nil)
+	sched.acceptedDomainMap, _ = cmap.NewConcurrentMap(1, nil)
 	for _, domain := range requestArgs.AcceptedDomains {
 		sched.acceptedDomainMap.Put(domain, struct{}{})
 	}
@@ -136,8 +135,7 @@ func (sched *myScheduler) Init(
 		sched.urlMap.Len(), sched.urlMap.Concurrency())
 	sched.initBufferPool(dataArgs)
 	sched.resetContext()
-	sched.summary =
-		newSchedSummary(requestArgs, dataArgs, moduleArgs, sched)
+	sched.summary = newSchedSummary(requestArgs, dataArgs, moduleArgs, sched)
 	// 注册组件。
 	logger.Info("Register modules...")
 	if err = sched.registerModules(moduleArgs); err != nil {
@@ -159,8 +157,7 @@ func (sched *myScheduler) Start(firstHTTPReq *http.Request) (err error) {
 	// 检查状态。
 	logger.Info("Check status for start...")
 	var oldStatus Status
-	oldStatus, err =
-		sched.checkAndSetStatus(SCHED_STATUS_STARTING)
+	oldStatus, err = sched.checkAndSetStatus(SCHED_STATUS_STARTING)
 	defer func() {
 		sched.statusLock.Lock()
 		if err != nil {
@@ -198,8 +195,8 @@ func (sched *myScheduler) Start(firstHTTPReq *http.Request) (err error) {
 	sched.analyze()
 	sched.pick()
 	logger.Info("Scheduler has been started.")
-	// 放入第一个请求。
 	firstReq := module.NewRequest(firstHTTPReq, 0)
+	// 放入第一个请求。
 	sched.sendReq(firstReq)
 	return nil
 }
@@ -460,6 +457,8 @@ func (sched *myScheduler) analyzeOne(resp *module.Response) {
 			if data == nil {
 				continue
 			}
+			// 数据列表中的每个元素既可能是新请求也可能是新条目
+			// 需要进行类型判断，以便于把它们放到对应的数据缓冲池中
 			switch d := data.(type) {
 			case *module.Request:
 				sched.sendReq(d)
