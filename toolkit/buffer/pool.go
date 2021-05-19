@@ -8,6 +8,10 @@ import (
 	"github.com/rszhh/gowcer/errors"
 )
 
+// 这里实现的是一个具有自动伸缩功能的缓冲池
+// 如果在从bufCh拿到的缓冲器是空的，可以直接把它关掉并且不需要还给缓冲池
+// 如果在放入数据时发现所有缓冲器已满并且在一段时间内都没有空位，就新建一个缓冲器并放入bufCh
+
 // Pool 代表数据缓冲池的接口类型。
 type Pool interface {
 	// BufferCap 用于获取池中缓冲器的统一容量。
@@ -65,6 +69,7 @@ func NewPool(bufferCap uint32, maxBufferNumber uint32) (Pool, error) {
 	}
 	bufCh := make(chan Buffer, maxBufferNumber)
 	buf, _ := NewBuffer(bufferCap)
+	// 缓冲池预热
 	bufCh <- buf
 	return &myPool{
 		bufferCap:       bufferCap,
@@ -115,6 +120,7 @@ func (pool *myPool) putData(
 	defer func() {
 		pool.rwlock.RLock()
 		if pool.Closed() {
+			// 原子性的递减bufferNumber的值
 			atomic.AddUint32(&pool.bufferNumber, ^uint32(0))
 			err = ErrClosedBufferPool
 		} else {
@@ -123,20 +129,25 @@ func (pool *myPool) putData(
 		pool.rwlock.RUnlock()
 	}()
 	ok, err = buf.Put(datum)
+	// 数据放入成功
 	if ok {
 		atomic.AddUint64(&pool.total, 1)
 		return
 	}
+	// 缓冲器已关闭
 	if err != nil {
 		return
 	}
 	// 若因缓冲器已满而未放入数据就递增计数。
 	(*count)++
-	// 如果尝试向缓冲器放入数据的失败次数达到阈值，
-	// 并且池中缓冲器的数量未达到最大值，
-	// 那么就尝试创建一个新的缓冲器，先放入数据再把它放入池。
+	// 注意：下面的操作不能放在defer里执行！！
+	// 如果尝试向缓冲器放入数据的失败次数达到阈值，并且池中缓冲器的数量未达到最大值
+	// 那么就尝试创建一个新的缓冲器，先放入数据再把它放入池
 	if *count >= maxCount && pool.BufferNumber() < pool.MaxBufferNumber() {
+		// 加锁的目的是防止向已关闭的缓冲池追加缓冲器
 		pool.rwlock.Lock()
+		// 锁上之后再次确认一下
+		// 防止在上面判断之后、锁上之前因为竞态条件的存在导致当前缓冲数量大于最大值
 		if pool.BufferNumber() < pool.MaxBufferNumber() {
 			if pool.Closed() {
 				pool.rwlock.Unlock()
@@ -150,6 +161,7 @@ func (pool *myPool) putData(
 			ok = true
 		}
 		pool.rwlock.Unlock()
+		// 更新计数，清零count的值
 		*count = 0
 	}
 	return
@@ -177,8 +189,7 @@ func (pool *myPool) getData(
 		return nil, ErrClosedBufferPool
 	}
 	defer func() {
-		// 如果尝试从缓冲器获取数据的失败次数达到阈值，
-		// 同时当前缓冲器已空且池中缓冲器的数量大于1，
+		// 如果尝试从缓冲器获取数据的失败次数达到阈值，同时当前缓冲器已空且池中缓冲器的数量大于1，
 		// 那么就直接关掉当前缓冲器，并不归还给池。
 		if *count >= maxCount && buf.Len() == 0 && pool.BufferNumber() > 1 {
 			buf.Close()
@@ -196,10 +207,12 @@ func (pool *myPool) getData(
 		pool.rwlock.RUnlock()
 	}()
 	datum, err = buf.Get()
+	// 成功取出数据
 	if datum != nil {
 		atomic.AddUint64(&pool.total, ^uint64(0))
 		return
 	}
+	// 通道已关闭
 	if err != nil {
 		return
 	}

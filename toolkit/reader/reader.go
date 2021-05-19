@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"io/ioutil"
 )
 
 // MultipleReader 代表多重读取器的接口。
@@ -24,7 +23,7 @@ func NewMultipleReader(reader io.Reader) (MultipleReader, error) {
 	var data []byte
 	var err error
 	if reader != nil {
-		data, err = ioutil.ReadAll(reader)
+		data, err = io.ReadAll(reader)
 		if err != nil {
 			return nil, fmt.Errorf("multiple reader: couldn't create a new one: %s", err)
 		}
@@ -36,6 +35,11 @@ func NewMultipleReader(reader io.Reader) (MultipleReader, error) {
 	}, nil
 }
 
+// Reader 总是返回一个新的可关闭的读取器。
+// 书上应该写错了，返回的是无需关闭的
 func (rr *myMultipleReader) Reader() io.ReadCloser {
-	return ioutil.NopCloser(bytes.NewReader(rr.data))
+	// ioutil.NopCloser函数的结果值的Close方法永远只会返回nil
+	// 所以这个函数常被用于包装无需关闭的读取器
+	// As of Go 1.16, this function simply calls io.NopCloser.
+	return io.NopCloser(bytes.NewReader(rr.data))
 }

@@ -6,7 +6,8 @@ int -> uint8
 base.go
 LoggerType -> LogType
 
-
+reader.go
+ioutil -> io
 
 TODO
 ------------------------
