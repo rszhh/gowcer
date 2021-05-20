@@ -240,6 +240,8 @@ func (sched *myScheduler) Status() Status {
 func (sched *myScheduler) ErrorChan() <-chan error {
 	errBuffer := sched.errorBufferPool
 	errCh := make(chan error, errBuffer.BufferCap())
+	// go函数不会直接使用外部值，所有的外部值均通过参数传入
+	// 主要是为了防止外部值失效
 	go func(errBuffer buffer.Pool, errCh chan error) {
 		for {
 			if sched.canceled() {
