@@ -51,6 +51,7 @@ type myScheduler struct {
 	// acceptedDomainMap 代表可以接受的URL的主域名的字典。
 	acceptedDomainMap cmap.ConcurrentMap
 	// registrar 代表组件注册器。
+	// 是一个map字典，用于记录所有的组件实例。
 	registrar module.Registrar
 	// reqBufferPool 代表请求的缓冲池。
 	reqBufferPool buffer.Pool
@@ -105,6 +106,7 @@ func (sched *myScheduler) Init(
 	if err = requestArgs.Check(); err != nil {
 		return err
 	}
+	logger.Info("Request arguments are valid.")
 	logger.Info("Check data arguments...")
 	if err = dataArgs.Check(); err != nil {
 		return err
@@ -206,8 +208,7 @@ func (sched *myScheduler) Stop() (err error) {
 	// 检查状态。
 	logger.Info("Check status for stop...")
 	var oldStatus Status
-	oldStatus, err =
-		sched.checkAndSetStatus(SCHED_STATUS_STOPPING)
+	oldStatus, err = sched.checkAndSetStatus(SCHED_STATUS_STOPPING)
 	defer func() {
 		sched.statusLock.Lock()
 		if err != nil {

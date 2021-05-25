@@ -8,9 +8,10 @@ import (
 	"github.com/rszhh/gowcer/errors"
 )
 
-// 这里实现的是一个具有自动伸缩功能的缓冲池
-// 如果在从bufCh拿到的缓冲器是空的，可以直接把它关掉并且不需要还给缓冲池
+// 这里实现的是一个具有【自动伸缩功能】的缓冲池
+// 如果从bufCh拿到的缓冲器是空的，达到一定条件可以直接把它关掉并且不需要还给缓冲池
 // 如果在放入数据时发现所有缓冲器已满并且在一段时间内都没有空位，就新建一个缓冲器并放入bufCh
+// 动态伸缩的功能主要体现在putData()和getData()
 
 // Pool 代表数据缓冲池的接口类型。
 type Pool interface {
@@ -48,6 +49,8 @@ type myPool struct {
 	// total 代表池中数据的总数。
 	total uint64
 	// bufCh 代表存放缓冲器的通道。
+	// 这是一个双重通道设计。
+	// 在放入或获取数据时，会从bufCh拿到一个缓冲器，再向该缓冲器放入或读取数据，最后放回bufCh。
 	bufCh chan Buffer
 	// closed 代表缓冲池的关闭状态：0-未关闭；1-已关闭。
 	closed uint32

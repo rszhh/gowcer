@@ -117,8 +117,7 @@ func checkStatus(
 					firstIdleTime = time.Now()
 				}
 				if idleCount >= maxIdleCount {
-					msg :=
-						fmt.Sprintf(msgReachMaxIdleCount, time.Since(firstIdleTime).String())
+					msg := fmt.Sprintf(msgReachMaxIdleCount, time.Since(firstIdleTime).String())
 					record(0, msg)
 					// 再次检查调度器的空闲状态，确保它已经可以被停止。
 					if scheduler.Idle() {

@@ -28,6 +28,7 @@ func GenMID(mtype Type, sn uint64, maddr net.Addr) (MID, error) {
 	var midStr string
 	if maddr == nil {
 		midStr = fmt.Sprintf(midTemplate, letter, sn, "")
+		// 去掉 |
 		midStr = midStr[:len(midStr)-1]
 	} else {
 		midStr = fmt.Sprintf(midTemplate, letter, sn, maddr.String())

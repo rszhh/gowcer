@@ -20,3 +20,6 @@ Name() LogType
 
 logger.go
 每次都是使用的logrus
+
+pool.go
+getData() defer

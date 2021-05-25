@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2923d3-7b97-4d47-b5bc-824755149a38" name="Default Changelist" comment="" />
+    <list default="true" id="8b2923d3-7b97-4d47-b5bc-824755149a38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finder/finder.go" beforeDir="false" afterPath="$PROJECT_DIR$/finder/finder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/mid.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/mid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/sn.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/sn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/scheduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/scheduler.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

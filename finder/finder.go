@@ -53,18 +53,21 @@ func main() {
 	scheduler := sched.NewScheduler()
 	// 准备调度器的初始化参数。
 	domainParts := strings.Split(domains, ",")
-	var acceptedDomains = []string{}
+	// var acceptedDomains = []string{}
+	acceptedDomains := make([]string, 0)
 	for _, domain := range domainParts {
+		// 将domain两边的空格去掉
 		domain = strings.TrimSpace(domain)
 		if domain != "" {
-			acceptedDomains =
-				append(acceptedDomains, domain)
+			acceptedDomains = append(acceptedDomains, domain)
 		}
 	}
 	requestArgs := sched.RequestArgs{
 		AcceptedDomains: acceptedDomains,
 		MaxDepth:        uint32(depth),
 	}
+	// 四种类型的缓冲区大小是一个动态调整的过程
+	// 这里暂且认为分析器处理数据的总耗时是条目处理管道的10%，同时是下载器的1%
 	dataArgs := sched.DataArgs{
 		ReqBufferCap:         50,
 		ReqMaxBufferNumber:   1000,

@@ -10,6 +10,8 @@ import (
 
 // 虽然缓冲器的功能使用channel可以满足，但是它解决了可能会引发channel panic的两个问题：
 // 向一个已关闭的通道发送值 和 关闭一个已关闭的通道。
+// 如果直接使用channel上面的这两个问题也不是不可以解决，进行Close判断。
+// 最主要的是和上层的pool形成一个具有动态伸缩功能缓冲池。
 
 // Buffer 代表FIFO的缓冲器的接口类型。
 type Buffer interface {
@@ -65,6 +67,7 @@ func (buf *myBuffer) Len() uint32 {
 func (buf *myBuffer) Put(datum interface{}) (ok bool, err error) {
 	buf.closingLock.RLock()
 	defer buf.closingLock.RUnlock()
+	// 防止向一个已关闭的通道发送数据导致panic
 	if buf.Closed() {
 		return false, ErrClosedBuffer
 	}

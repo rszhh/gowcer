@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-// sn是每个组件实例的唯一ID：MID的重要组成部分中的其中一个
+// sn是每个组件实例的唯一ID - MID的一个重要组成部分
 
 // SNGenertor 代表序列号生成器的接口类型
 type SNGenertor interface {
