@@ -1,0 +1,21 @@
+// generate:
+// protoc -I=. --go_out=. ./geturl.proto
+// protoc -I=. --go-grpc_out=. ./geturl.proto
+
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./;proto";
+
+service SendAddress {
+    rpc GetUrl (UrlRequest) returns (UrlReply) {}
+}
+
+message UrlRequest {
+    string ip = 1;
+}
+
+message UrlReply {
+    bool success = 1;
+}
