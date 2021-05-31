@@ -2,8 +2,11 @@ package main
 
 import (
 	"context"
+	"errors"
 	"log"
+	"net/url"
 	"os"
+	"os/exec"
 	"sync"
 	"time"
 
@@ -89,14 +92,34 @@ func main() {
 		var conn *grpc.ClientConn
 		defer conn.Close()
 
+		var c pb.SendAddressClient
+
 		for d := range msgs {
-			// 如果接收到的url不合法，forever <- struct{}{}
+			// 如果接收到的url为空，说明已经没有url可爬，结束爬虫工作
 			if len(d.Body) == 0 {
-				log.Println("NO URL, FINDER EXIT!")
+				log.Println("NO TARGET URL, FINDER EXIT!")
 				forever <- struct{}{}
 			}
 
 			// 阻塞执行 运行finder 的脚本
+			// go run finder.go -first http://zhihu.sogou.com/zhihu\?query\=golang+logo -domains zhihu.com
+			u, err := url.Parse(string(d.Body))
+			if err != nil {
+				failOnError(err, "An error happened when parsed url.")
+				// 继续获取下一个爬取url
+				err = gRPCRequest(c)
+				if err != nil {
+					log.Printf("failed to get url: %v", err)
+					forever <- struct{}{}
+				}
+			}
+			host := u.Hostname()
+
+			cmd := exec.Command("go", "run", "./finder/finder.go", "-first", u.String(), "-domains", host)
+			// run是阻塞执行，strat是非阻塞执行
+			if err = cmd.Run(); err != nil {
+				failOnError(err, "")
+			}
 
 			// sync.Once(func(dial))
 			once.Do(func() {
@@ -104,24 +127,35 @@ func main() {
 				if err != nil {
 					log.Fatalf("did not connect: %v", err)
 				}
+				c = pb.NewSendAddressClient(conn)
 			})
 
-			c := pb.NewSendAddressClient(conn)
-			ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-
-			s, err := c.GetUrl(ctx, &pb.UrlRequest{Ip: ip})
-			if err != nil || !s.Success {
-				log.Fatalf("could not greet: %v", err)
+			err = gRPCRequest(c)
+			if err != nil {
+				log.Printf("failed to get url: %v", err)
+				forever <- struct{}{}
 			}
 
-			cancel()
-
-			log.Printf(" [x] %s", d.Body)
-			time.Sleep(5 * time.Second)
-			log.Println("finished")
+			log.Println("Request the next target URL!")
 		}
 	}()
 
 	log.Printf(" [*] Waiting for logs. To exit press CTRL+C")
 	<-forever
+}
+
+func gRPCRequest(c pb.SendAddressClient) error {
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	defer cancel()
+
+	s, err := c.GetUrl(ctx, &pb.UrlRequest{Ip: ip})
+	if err != nil {
+		// schedual那边处理失败，比如是publish失败，也就停止了
+		return err
+	}
+	if !s.Success {
+		return errors.New("gRPC response, s.Success is false")
+	}
+
+	return nil
 }

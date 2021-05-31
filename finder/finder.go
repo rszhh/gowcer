@@ -30,7 +30,7 @@ func init() {
 	// https://www.vmgirls.com/
 	flag.StringVar(&firstURL, "first", "https://pic.netbian.com/4kmeinv/",
 		"The first URL which you want to access.")
-	flag.StringVar(&domains, "domains", "netbian.com",
+	flag.StringVar(&domains, "domains", "pic.netbian.com",
 		"The primary domains which you accepted. "+
 			"Please using comma-separated multiple domains.")
 	flag.UintVar(&depth, "depth", 3,
