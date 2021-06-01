@@ -18,7 +18,7 @@ import (
 var once sync.Once
 
 const (
-	ip      = "39.96.85.141"
+	ip      = "47.94.155.154"
 	address = "39.96.85.141:50051"
 )
 
