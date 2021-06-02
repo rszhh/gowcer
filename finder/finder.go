@@ -35,7 +35,7 @@ func init() {
 			"Please using comma-separated multiple domains.")
 	flag.UintVar(&depth, "depth", 3,
 		"The depth for crawling.")
-	flag.StringVar(&dirPath, "dir", "./pictures",
+	flag.StringVar(&dirPath, "dir", "./finder/pictures",
 		"The path which you want to save the image files.")
 }
 

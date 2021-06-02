@@ -38,7 +38,7 @@ func main() {
 	defer ch.Close()
 
 	err = ch.ExchangeDeclare(
-		"logs_direct", // name
+		"url_direct", // name
 		"direct",      // type
 		true,          // durable
 		false,         // auto-deleted
@@ -64,11 +64,11 @@ func main() {
 	}
 	for _, s := range os.Args[1:] {
 		log.Printf("Binding queue %s to exchange %s with routing key %s",
-			q.Name, "logs_direct", s)
+			q.Name, "url_direct", s)
 		err = ch.QueueBind(
 			q.Name,        // queue name
 			s,             // routing key
-			"logs_direct", // exchange
+			"url_direct", // exchange
 			false,
 			nil)
 		failOnError(err, "Failed to bind a queue")
@@ -92,22 +92,21 @@ func main() {
 		var conn *grpc.ClientConn
 		defer conn.Close()
 
-		var c pb.SendAddressClient
-
 		for d := range msgs {
 			// 如果接收到的url为空，说明已经没有url可爬，结束爬虫工作
 			if len(d.Body) == 0 {
 				log.Println("NO TARGET URL, FINDER EXIT!")
 				forever <- struct{}{}
 			}
+			log.Printf("get target url: %s", string(d.Body))
 
 			// 阻塞执行 运行finder 的脚本
 			// go run finder.go -first http://zhihu.sogou.com/zhihu\?query\=golang+logo -domains zhihu.com
 			u, err := url.Parse(string(d.Body))
-			if err != nil {
+			if err != nil && conn != nil {
 				failOnError(err, "An error happened when parsed url.")
 				// 继续获取下一个爬取url
-				err = gRPCRequest(c)
+				err = gRPCRequest(conn)
 				if err != nil {
 					log.Printf("failed to get url: %v", err)
 					forever <- struct{}{}
@@ -115,22 +114,27 @@ func main() {
 			}
 			host := u.Hostname()
 
-			cmd := exec.Command("go", "run", "./finder/finder.go", "-first", u.String(), "-domains", host)
+			cmd := exec.Command("go", "run", "./finder/finder.go", "-first", string(d.Body), "-domains", host)
+			log.Println(cmd.String())
 			// run是阻塞执行，strat是非阻塞执行
-			if err = cmd.Run(); err != nil {
+			err = cmd.Run()
+			if err != nil {
+				log.Printf("cmd.Run() err: %v", err)
 				failOnError(err, "")
 			}
+			log.Println("cmd Run finished!")
 
 			// sync.Once(func(dial))
 			once.Do(func() {
+				log.Println("begin gRPC Dial!")
 				conn, err = grpc.Dial(address, grpc.WithInsecure(), grpc.WithBlock())
 				if err != nil {
 					log.Fatalf("did not connect: %v", err)
 				}
-				c = pb.NewSendAddressClient(conn)
+				log.Println("conn sync.Once.Do() finished!")
 			})
 
-			err = gRPCRequest(c)
+			err = gRPCRequest(conn)
 			if err != nil {
 				log.Printf("failed to get url: %v", err)
 				forever <- struct{}{}
@@ -144,7 +148,8 @@ func main() {
 	<-forever
 }
 
-func gRPCRequest(c pb.SendAddressClient) error {
+func gRPCRequest(conn *grpc.ClientConn) error {
+	c := pb.NewSendAddressClient(conn)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
