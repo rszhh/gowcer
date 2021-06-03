@@ -1,0 +1,258 @@
+# zhaoh @ ZhaoHengheng in ~/gowork/gowcer/cmap on git:dev x [17:04:32] C:1
+$ go test -v -run=^$ -bench . -benchmem
+goos: linux
+goarch: amd64
+pkg: github.com/rszhh/gowcer/cmap
+cpu: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+BenchmarkCmapPutAbsent
+BenchmarkCmapPutAbsent/9a4bcc50
+BenchmarkCmapPutAbsent/9a4bcc50-8         	 5791924	       198.5 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/7d69ff59
+BenchmarkCmapPutAbsent/7d69ff59-8         	 5907667	       201.9 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/56a64179
+BenchmarkCmapPutAbsent/56a64179-8         	 5995156	       202.7 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/2d29d94a
+BenchmarkCmapPutAbsent/2d29d94a-8         	 6039879	       201.1 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/c495ab3d
+BenchmarkCmapPutAbsent/c495ab3d-8         	 5949466	       206.7 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/960d0e50
+BenchmarkCmapPutAbsent/960d0e50-8         	 5949400	       201.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/ca26a91f
+BenchmarkCmapPutAbsent/ca26a91f-8         	 5964837	       207.3 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/70b07144
+BenchmarkCmapPutAbsent/70b07144-8         	 5476341	       243.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/dfbbbe76
+BenchmarkCmapPutAbsent/dfbbbe76-8         	 3289278	       330.2 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/89ff0d30
+BenchmarkCmapPutAbsent/89ff0d30-8         	 3960080	       321.7 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/f21fcd76
+BenchmarkCmapPutAbsent/f21fcd76-8         	 3548146	       356.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/14ac9407
+BenchmarkCmapPutAbsent/14ac9407-8         	 3410559	       302.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/ed00b241
+BenchmarkCmapPutAbsent/ed00b241-8         	 3563776	       322.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/cf8e8e19
+BenchmarkCmapPutAbsent/cf8e8e19-8         	 3768429	       290.0 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/e2204e7d
+BenchmarkCmapPutAbsent/e2204e7d-8         	 4005410	       293.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/3f559e04
+BenchmarkCmapPutAbsent/3f559e04-8         	 4098258	       282.6 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/08dcb255
+BenchmarkCmapPutAbsent/08dcb255-8         	 4197693	       289.4 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/9ba20943
+BenchmarkCmapPutAbsent/9ba20943-8         	 4058523	       288.8 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/4a1c022b
+BenchmarkCmapPutAbsent/4a1c022b-8         	 3968202	       286.0 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutAbsent/e51d9c08
+BenchmarkCmapPutAbsent/e51d9c08-8         	 4141464	       281.3 ns/op	      80 B/op	       3 allocs/op
+BenchmarkCmapPutPresent
+BenchmarkCmapPutPresent/invariable_key
+BenchmarkCmapPutPresent/invariable_key-8  	 3409318	       334.6 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#01
+BenchmarkCmapPutPresent/invariable_key#01-8         	 3483091	       338.7 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#02
+BenchmarkCmapPutPresent/invariable_key#02-8         	 3325362	       338.4 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#03
+BenchmarkCmapPutPresent/invariable_key#03-8         	 3577657	       338.0 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#04
+BenchmarkCmapPutPresent/invariable_key#04-8         	 3439687	       333.3 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#05
+BenchmarkCmapPutPresent/invariable_key#05-8         	 3688120	       334.7 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#06
+BenchmarkCmapPutPresent/invariable_key#06-8         	 3398209	       339.3 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#07
+BenchmarkCmapPutPresent/invariable_key#07-8         	 3372816	       334.2 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#08
+BenchmarkCmapPutPresent/invariable_key#08-8         	 3503862	       344.2 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#09
+BenchmarkCmapPutPresent/invariable_key#09-8         	 3458322	       334.6 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#10
+BenchmarkCmapPutPresent/invariable_key#10-8         	 3577242	       333.2 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#11
+BenchmarkCmapPutPresent/invariable_key#11-8         	 3305506	       340.5 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#12
+BenchmarkCmapPutPresent/invariable_key#12-8         	 3399660	       334.2 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#13
+BenchmarkCmapPutPresent/invariable_key#13-8         	 3463929	       335.1 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#14
+BenchmarkCmapPutPresent/invariable_key#14-8         	 3404866	       334.8 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#15
+BenchmarkCmapPutPresent/invariable_key#15-8         	 3458665	       333.1 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#16
+BenchmarkCmapPutPresent/invariable_key#16-8         	 3455019	       336.2 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#17
+BenchmarkCmapPutPresent/invariable_key#17-8         	 3441364	       334.7 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#18
+BenchmarkCmapPutPresent/invariable_key#18-8         	 3545904	       337.1 ns/op	      96 B/op	       4 allocs/op
+BenchmarkCmapPutPresent/invariable_key#19
+BenchmarkCmapPutPresent/invariable_key#19-8         	 3485224	       330.0 ns/op	      96 B/op	       4 allocs/op
+BenchmarkMapPut
+BenchmarkMapPut/76e73219
+BenchmarkMapPut/76e73219-8                          	64659457	        16.07 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/d8577e2d
+BenchmarkMapPut/d8577e2d-8                          	67528312	        16.25 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/c660d864
+BenchmarkMapPut/c660d864-8                          	65285713	        17.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/c37fa218
+BenchmarkMapPut/c37fa218-8                          	63781556	        17.80 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/92750d7e
+BenchmarkMapPut/92750d7e-8                          	58960662	        19.06 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/7dbcaa3b
+BenchmarkMapPut/7dbcaa3b-8                          	57449541	        20.36 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/6065284f
+BenchmarkMapPut/6065284f-8                          	52623883	        21.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/3a0f9b20
+BenchmarkMapPut/3a0f9b20-8                          	50214966	        22.40 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/c86ce65e
+BenchmarkMapPut/c86ce65e-8                          	59265390	        19.31 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapPut/e5bb110c
+BenchmarkMapPut/e5bb110c-8                          	58707448	        19.27 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet
+BenchmarkCmapGet/ea7d2424
+BenchmarkCmapGet/ea7d2424-8                         	13342459	        79.36 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/e950e965
+BenchmarkCmapGet/e950e965-8                         	11301079	        93.77 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/cf74b435
+BenchmarkCmapGet/cf74b435-8                         	14611004	        77.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/b0148968
+BenchmarkCmapGet/b0148968-8                         	13583466	        79.50 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/93ea334c
+BenchmarkCmapGet/93ea334c-8                         	15483668	        73.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/3278c518
+BenchmarkCmapGet/3278c518-8                         	13677097	        78.99 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/b3ea9c48
+BenchmarkCmapGet/b3ea9c48-8                         	13666954	        78.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/50082204
+BenchmarkCmapGet/50082204-8                         	13683362	        77.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/d22c2571
+BenchmarkCmapGet/d22c2571-8                         	14569074	        76.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapGet/7a2a2268
+BenchmarkCmapGet/7a2a2268-8                         	13978090	        77.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet
+BenchmarkMapGet/0d9ae405
+BenchmarkMapGet/0d9ae405-8                          	71958562	        16.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/4cde7340
+BenchmarkMapGet/4cde7340-8                          	78334605	        14.14 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/cd996f7d
+BenchmarkMapGet/cd996f7d-8                          	87802794	        13.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/49b7f17b
+BenchmarkMapGet/49b7f17b-8                          	89218501	        13.15 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/58e10a1a
+BenchmarkMapGet/58e10a1a-8                          	84321576	        13.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/8860ac74
+BenchmarkMapGet/8860ac74-8                          	81148291	        17.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/d51e5d13
+BenchmarkMapGet/d51e5d13-8                          	52177964	        20.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/5e706625
+BenchmarkMapGet/5e706625-8                          	77776040	        14.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/83d21773
+BenchmarkMapGet/83d21773-8                          	90981200	        12.87 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapGet/6f640b73
+BenchmarkMapGet/6f640b73-8                          	66632221	        18.08 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete
+BenchmarkCmapDelete/03fe2e60
+BenchmarkCmapDelete/03fe2e60-8                      	11888469	        89.42 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/74099377
+BenchmarkCmapDelete/74099377-8                      	12274909	        87.96 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/63bc2f0d
+BenchmarkCmapDelete/63bc2f0d-8                      	13027644	        85.97 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/2e9e1023
+BenchmarkCmapDelete/2e9e1023-8                      	 7649302	       153.9 ns/op	      16 B/op	       1 allocs/op
+BenchmarkCmapDelete/6439664c
+BenchmarkCmapDelete/6439664c-8                      	11898702	        89.85 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/c5446562
+BenchmarkCmapDelete/c5446562-8                      	12106780	        88.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/cfe1e03f
+BenchmarkCmapDelete/cfe1e03f-8                      	 7902207	       153.4 ns/op	      16 B/op	       1 allocs/op
+BenchmarkCmapDelete/8930c37e
+BenchmarkCmapDelete/8930c37e-8                      	 7157551	       156.3 ns/op	      16 B/op	       1 allocs/op
+BenchmarkCmapDelete/42ccbf09
+BenchmarkCmapDelete/42ccbf09-8                      	11237247	        91.63 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/87a66056
+BenchmarkCmapDelete/87a66056-8                      	12090446	        88.06 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/1e31f552
+BenchmarkCmapDelete/1e31f552-8                      	12262408	        85.24 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/5a32ea70
+BenchmarkCmapDelete/5a32ea70-8                      	12335842	        83.61 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/0d5deb42
+BenchmarkCmapDelete/0d5deb42-8                      	 7709368	       155.5 ns/op	      16 B/op	       1 allocs/op
+BenchmarkCmapDelete/723ead05
+BenchmarkCmapDelete/723ead05-8                      	11620510	        91.07 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/9fdc7d51
+BenchmarkCmapDelete/9fdc7d51-8                      	12123042	        88.60 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/f8fc8b51
+BenchmarkCmapDelete/f8fc8b51-8                      	11729703	        97.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/583fea0f
+BenchmarkCmapDelete/583fea0f-8                      	11624119	       101.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/736cc66b
+BenchmarkCmapDelete/736cc66b-8                      	 9258788	       114.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapDelete/24e59e0e
+BenchmarkCmapDelete/24e59e0e-8                      	 6204783	       187.4 ns/op	      16 B/op	       1 allocs/op
+BenchmarkCmapDelete/a3eeed78
+BenchmarkCmapDelete/a3eeed78-8                      	 9996271	       118.3 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete
+BenchmarkMapDelete/03b5e037
+BenchmarkMapDelete/03b5e037-8                       	29370102	        50.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/af958311
+BenchmarkMapDelete/af958311-8                       	44522970	        22.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/eada1452
+BenchmarkMapDelete/eada1452-8                       	49082451	        27.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/afe39810
+BenchmarkMapDelete/afe39810-8                       	51263650	        21.98 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/8228836e
+BenchmarkMapDelete/8228836e-8                       	65137519	        19.41 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/e30d6d52
+BenchmarkMapDelete/e30d6d52-8                       	55498966	        20.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/3d5d0916
+BenchmarkMapDelete/3d5d0916-8                       	51389162	        22.29 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/26038959
+BenchmarkMapDelete/26038959-8                       	30819616	        34.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/8c84c05d
+BenchmarkMapDelete/8c84c05d-8                       	38484446	        28.99 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/84ab8024
+BenchmarkMapDelete/84ab8024-8                       	65508193	        18.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/bef49257
+BenchmarkMapDelete/bef49257-8                       	50544478	        21.21 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/a95abc5e
+BenchmarkMapDelete/a95abc5e-8                       	38468710	        27.27 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/78684c3a
+BenchmarkMapDelete/78684c3a-8                       	44047010	        26.68 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/3c009101
+BenchmarkMapDelete/3c009101-8                       	57810332	        20.10 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/87188011
+BenchmarkMapDelete/87188011-8                       	42154399	        26.46 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/1c3de75f
+BenchmarkMapDelete/1c3de75f-8                       	67109886	        17.30 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/c6f73361
+BenchmarkMapDelete/c6f73361-8                       	43305877	        26.53 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/c819ce39
+BenchmarkMapDelete/c819ce39-8                       	43139461	        27.23 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/95a3202b
+BenchmarkMapDelete/95a3202b-8                       	43222316	        26.28 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapDelete/d6701500
+BenchmarkMapDelete/d6701500-8                       	65081286	        17.36 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapLen
+BenchmarkCmapLen/Len0
+BenchmarkCmapLen/Len0-8                             	462974764	         2.314 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapLen/Len1
+BenchmarkCmapLen/Len1-8                             	480344996	         2.247 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapLen/Len2
+BenchmarkCmapLen/Len2-8                             	542929807	         2.177 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapLen/Len3
+BenchmarkCmapLen/Len3-8                             	473342062	         2.280 ns/op	       0 B/op	       0 allocs/op
+BenchmarkCmapLen/Len4
+BenchmarkCmapLen/Len4-8                             	471613992	         2.248 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapLen
+BenchmarkMapLen/Len0
+BenchmarkMapLen/Len0-8                              	1000000000	         0.3838 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapLen/Len1
+BenchmarkMapLen/Len1-8                              	1000000000	         0.3949 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapLen/Len2
+BenchmarkMapLen/Len2-8                              	1000000000	         0.4000 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapLen/Len3
+BenchmarkMapLen/Len3-8                              	1000000000	         0.3989 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMapLen/Len4
+BenchmarkMapLen/Len4-8                              	1000000000	         0.3722 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/rszhh/gowcer/cmap	188.744s
+

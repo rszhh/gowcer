@@ -34,7 +34,7 @@ type segment struct {
 	pairTotal uint64
 	// pairRedistributor 代表键-元素对的再分布器
 	pairRedistributor PairRedistributor
-	lock              sync.Mutex
+	lock              sync.RWMutex
 }
 
 // NewSegment 会创建一个Segment类型的实例
@@ -75,9 +75,9 @@ func (s *segment) Get(key string) Pair {
 }
 
 func (s *segment) GetWithHash(key string, keyHash uint64) Pair {
-	s.lock.Lock()
+	s.lock.RLock()
 	b := s.buckets[int(keyHash%uint64(s.bucketsLen))]
-	s.lock.Unlock()
+	s.lock.RUnlock()
 	return b.Get(key)
 }
 

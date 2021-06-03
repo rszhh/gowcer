@@ -1,0 +1,1638 @@
+# zhaoh @ ZhaoHengheng in ~/gowork/gowcer/cmap on git:dev x [17:03:26]
+$ go test -v
+=== RUN   TestBucketNew
+--- PASS: TestBucketNew (0.00s)
+=== RUN   TestBucketPut
+--- PASS: TestBucketPut (0.00s)
+=== RUN   TestBucketPutInParallel
+=== RUN   TestBucketPutInParallel/Put_in_parallel
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=dfa19931
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=dfa19931
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=eb50b14d
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=eb50b14d
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=0c04ac26
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=0c04ac26
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=03e4eb2a
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=03e4eb2a
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=e6c63665
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=e6c63665
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=c778c53b
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=c778c53b
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=b056190e
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=b056190e
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=d3d18071
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=d3d18071
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=35fcd17f
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=35fcd17f
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=50f36265
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=50f36265
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=64b10278
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=64b10278
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=cec9d810
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=cec9d810
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=3ab8ae07
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=3ab8ae07
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=bb299356
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=bb299356
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=2fde9a25
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=2fde9a25
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=c595c42a
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=c595c42a
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=55a9785e
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=55a9785e
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=0a0ec906
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=0a0ec906
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=a4d89729
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=a4d89729
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=cdacf12e
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=cdacf12e
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=5ec0fb06
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=5ec0fb06
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=c9675478
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=c9675478
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=a658a969
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=a658a969
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=0f6d260f
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=0f6d260f
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=af532d4f
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=af532d4f
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=1de22510
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=1de22510
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=c04cf32d
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=c04cf32d
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=2061cb75
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=2061cb75
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=7f91c04a
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=7f91c04a
+=== RUN   TestBucketPutInParallel/Put_in_parallel/Key=4264d407
+=== PAUSE TestBucketPutInParallel/Put_in_parallel/Key=4264d407
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=dfa19931
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=2fde9a25
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=4264d407
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=2061cb75
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=c04cf32d
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=bb299356
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=35fcd17f
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=af532d4f
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=d3d18071
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=0f6d260f
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=a658a969
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=c9675478
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=5ec0fb06
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=cdacf12e
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=3ab8ae07
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=a4d89729
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=b056190e
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=c778c53b
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=55a9785e
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=e6c63665
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=03e4eb2a
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=eb50b14d
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=0a0ec906
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=64b10278
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=c595c42a
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=7f91c04a
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=50f36265
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=1de22510
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=cec9d810
+=== CONT  TestBucketPutInParallel/Put_in_parallel/Key=0c04ac26
+--- PASS: TestBucketPutInParallel (0.00s)
+    --- PASS: TestBucketPutInParallel/Put_in_parallel (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=dfa19931 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=2fde9a25 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=4264d407 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=2061cb75 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=c04cf32d (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=bb299356 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=35fcd17f (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=af532d4f (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=d3d18071 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=0f6d260f (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=a658a969 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=c9675478 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=5ec0fb06 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=cdacf12e (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=3ab8ae07 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=a4d89729 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=b056190e (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=c778c53b (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=55a9785e (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=e6c63665 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=03e4eb2a (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=eb50b14d (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=0a0ec906 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=64b10278 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=c595c42a (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=7f91c04a (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=50f36265 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=1de22510 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=cec9d810 (0.00s)
+        --- PASS: TestBucketPutInParallel/Put_in_parallel/Key=0c04ac26 (0.00s)
+=== RUN   TestBucketGetInParallel
+=== RUN   TestBucketGetInParallel/Get_in_parallel
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Put_in_parallel
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=85098957
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=85098957
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=fefa1244
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=fefa1244
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=8cb69078
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=8cb69078
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=b1228e3c
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=b1228e3c
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=fafba879
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=fafba879
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=118f6813
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=118f6813
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=dc709c5c
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=dc709c5c
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=0d39a443
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=0d39a443
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=dddcd417
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=dddcd417
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=a3103c72
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=a3103c72
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=46f6b536
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=46f6b536
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=43d47c4d
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=43d47c4d
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=18b30e05
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=18b30e05
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=a1578c2f
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=a1578c2f
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=be5fd44c
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=be5fd44c
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=673d635b
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=673d635b
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=0fad0f55
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=0fad0f55
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=8c985d00
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=8c985d00
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=3f955f48
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=3f955f48
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b9f7c7c
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b9f7c7c
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=1f501943
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=1f501943
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=364c194e
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=364c194e
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=18bc633b
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=18bc633b
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=aee48d1f
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=aee48d1f
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=d5a29438
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=d5a29438
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=0a82db16
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=0a82db16
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=656b2579
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=656b2579
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b683439
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b683439
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=b49c773b
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=b49c773b
+=== RUN   TestBucketGetInParallel/Get_in_parallel/Get:_Key=a8e2a835
+=== PAUSE TestBucketGetInParallel/Get_in_parallel/Get:_Key=a8e2a835
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=85098957
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=656b2579
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=3f955f48
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=8c985d00
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=0fad0f55
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=673d635b
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=0a82db16
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=be5fd44c
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=18b30e05
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=d5a29438
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=a1578c2f
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=46f6b536
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=43d47c4d
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=a3103c72
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=dddcd417
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=dc709c5c
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=0d39a443
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=118f6813
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=b1228e3c
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=fafba879
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=fefa1244
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=b49c773b
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=8cb69078
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b683439
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=a8e2a835
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=364c194e
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=1f501943
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b9f7c7c
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=18bc633b
+=== CONT  TestBucketGetInParallel/Get_in_parallel/Get:_Key=aee48d1f
+--- PASS: TestBucketGetInParallel (0.00s)
+    --- PASS: TestBucketGetInParallel/Get_in_parallel (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Put_in_parallel (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=85098957 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=656b2579 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=3f955f48 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=8c985d00 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=0fad0f55 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=673d635b (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=be5fd44c (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=0a82db16 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=18b30e05 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=d5a29438 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=a1578c2f (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=46f6b536 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=43d47c4d (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=a3103c72 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=dddcd417 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=dc709c5c (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=0d39a443 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=b1228e3c (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=118f6813 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=fafba879 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=fefa1244 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=b49c773b (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=8cb69078 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b683439 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=a8e2a835 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=364c194e (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=1f501943 (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=2b9f7c7c (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=18bc633b (0.00s)
+        --- PASS: TestBucketGetInParallel/Get_in_parallel/Get:_Key=aee48d1f (0.00s)
+=== RUN   TestBucketGetFirstPair
+--- PASS: TestBucketGetFirstPair (0.00s)
+=== RUN   TestBucketDelete
+--- PASS: TestBucketDelete (0.00s)
+=== RUN   TestBucketDeleteInParallel
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=cd817c15
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=cd817c15
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=3578f534
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=3578f534
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=3eb7581c
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=3eb7581c
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=eb152a5e
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=eb152a5e
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=9cec1472
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=9cec1472
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=7aa5bd1e
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=7aa5bd1e
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=4fba3352
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=4fba3352
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=23c4784c
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=23c4784c
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=f9b5e41c
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=f9b5e41c
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=270d2a3a
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=270d2a3a
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=afd2834d
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=afd2834d
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=f0b3ac09
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=f0b3ac09
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=60c9b446
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=60c9b446
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=227d1c1e
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=227d1c1e
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=f27d710a
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=f27d710a
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=c6d2ea7c
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=c6d2ea7c
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=bca2ef41
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=bca2ef41
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=c13ada59
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=c13ada59
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=122f433b
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=122f433b
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=41441a54
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=41441a54
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=3942e54b
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=3942e54b
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=a4855316
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=a4855316
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=dd4e6d58
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=dd4e6d58
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=513cf61f
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=513cf61f
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=dc0a754f
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=dc0a754f
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=578ba822
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=578ba822
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=2746f94f
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=2746f94f
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=3d81e804
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=3d81e804
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=0082a402
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=0082a402
+=== RUN   TestBucketDeleteInParallel/Delete_in_parallel/Key=d9149335
+=== PAUSE TestBucketDeleteInParallel/Delete_in_parallel/Key=d9149335
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=0082a402
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=d9149335
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=f0b3ac09
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=cd817c15
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=3942e54b
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=3d81e804
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=122f433b
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=2746f94f
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=a4855316
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=afd2834d
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=270d2a3a
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=f9b5e41c
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=23c4784c
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=578ba822
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=4fba3352
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=3eb7581c
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=dc0a754f
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=c13ada59
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=9cec1472
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=bca2ef41
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=c6d2ea7c
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=513cf61f
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=dd4e6d58
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=41441a54
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=227d1c1e
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=f27d710a
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=eb152a5e
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=60c9b446
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=3578f534
+=== CONT  TestBucketDeleteInParallel/Delete_in_parallel/Key=7aa5bd1e
+--- PASS: TestBucketDeleteInParallel (0.01s)
+    --- PASS: TestBucketDeleteInParallel/Delete_in_parallel (0.01s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=0082a402 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=d9149335 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=f0b3ac09 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=cd817c15 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=3d81e804 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=122f433b (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=3942e54b (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=2746f94f (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=a4855316 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=afd2834d (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=270d2a3a (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=f9b5e41c (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=578ba822 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=23c4784c (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=3eb7581c (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=dc0a754f (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=c13ada59 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=4fba3352 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=9cec1472 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=41441a54 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=227d1c1e (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=f27d710a (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=eb152a5e (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=bca2ef41 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=513cf61f (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=c6d2ea7c (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=dd4e6d58 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=60c9b446 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=3578f534 (0.00s)
+        --- PASS: TestBucketDeleteInParallel/Delete_in_parallel/Key=7aa5bd1e (0.00s)
+=== RUN   TestBucketClear
+--- PASS: TestBucketClear (0.00s)
+=== RUN   TestBucketClearInParallel
+=== RUN   TestBucketClearInParallel/Clear_in_parallel
+=== RUN   TestBucketClearInParallel/Clear_in_parallel/Put
+=== PAUSE TestBucketClearInParallel/Clear_in_parallel/Put
+=== RUN   TestBucketClearInParallel/Clear_in_parallel/Clear
+=== PAUSE TestBucketClearInParallel/Clear_in_parallel/Clear
+=== CONT  TestBucketClearInParallel/Clear_in_parallel/Put
+=== CONT  TestBucketClearInParallel/Clear_in_parallel/Clear
+--- PASS: TestBucketClearInParallel (0.00s)
+    --- PASS: TestBucketClearInParallel/Clear_in_parallel (0.00s)
+        --- PASS: TestBucketClearInParallel/Clear_in_parallel/Put (0.00s)
+        --- PASS: TestBucketClearInParallel/Clear_in_parallel/Clear (0.00s)
+=== RUN   TestBucketAllInParallel
+=== RUN   TestBucketAllInParallel/All_in_parallel
+=== RUN   TestBucketAllInParallel/All_in_parallel/Put1
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Put1
+=== RUN   TestBucketAllInParallel/All_in_parallel/Put2
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Put2
+=== RUN   TestBucketAllInParallel/All_in_parallel/Get1
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Get1
+=== RUN   TestBucketAllInParallel/All_in_parallel/Get2
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Get2
+=== RUN   TestBucketAllInParallel/All_in_parallel/Delete1
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Delete1
+=== RUN   TestBucketAllInParallel/All_in_parallel/Delete2
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Delete2
+=== RUN   TestBucketAllInParallel/All_in_parallel/Clear
+=== PAUSE TestBucketAllInParallel/All_in_parallel/Clear
+=== CONT  TestBucketAllInParallel/All_in_parallel/Put1
+=== CONT  TestBucketAllInParallel/All_in_parallel/Clear
+=== CONT  TestBucketAllInParallel/All_in_parallel/Get2
+=== CONT  TestBucketAllInParallel/All_in_parallel/Delete2
+=== CONT  TestBucketAllInParallel/All_in_parallel/Put2
+=== CONT  TestBucketAllInParallel/All_in_parallel/Get1
+=== CONT  TestBucketAllInParallel/All_in_parallel/Delete1
+--- PASS: TestBucketAllInParallel (1.82s)
+    --- PASS: TestBucketAllInParallel/All_in_parallel (0.00s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Clear (0.00s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Get1 (0.05s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Get2 (0.05s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Delete2 (0.39s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Delete1 (0.49s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Put1 (1.80s)
+        --- PASS: TestBucketAllInParallel/All_in_parallel/Put2 (1.82s)
+=== RUN   TestCmapNew
+--- PASS: TestCmapNew (0.00s)
+=== RUN   TestCmapPut
+--- PASS: TestCmapPut (0.00s)
+=== RUN   TestCmapPutInParallel
+=== RUN   TestCmapPutInParallel/Put_in_parallel
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=5c3a4919
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=5c3a4919
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=8d33a372
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=8d33a372
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=9af5921e
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=9af5921e
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=d909be64
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=d909be64
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=e12de651
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=e12de651
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=02b47961
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=02b47961
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=3db21f02
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=3db21f02
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=af709f74
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=af709f74
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=cc632a53
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=cc632a53
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=28f44b41
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=28f44b41
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=1dd7933b
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=1dd7933b
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=8c15792a
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=8c15792a
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=b230fb2c
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=b230fb2c
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=070a8073
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=070a8073
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=8d59b144
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=8d59b144
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=a147e260
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=a147e260
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=0f4d6a13
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=0f4d6a13
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=98f8e571
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=98f8e571
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=83e91a45
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=83e91a45
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=0d7e0b18
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=0d7e0b18
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=d7c96666
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=d7c96666
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=4748d565
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=4748d565
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=1d8ead3c
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=1d8ead3c
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=9f280c0a
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=9f280c0a
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=890bef11
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=890bef11
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=b49b4d75
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=b49b4d75
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=9458752f
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=9458752f
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=6ab87259
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=6ab87259
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=8af7e132
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=8af7e132
+=== RUN   TestCmapPutInParallel/Put_in_parallel/Key=58406314
+=== PAUSE TestCmapPutInParallel/Put_in_parallel/Key=58406314
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=5c3a4919
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=58406314
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=8d59b144
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=cc632a53
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=af709f74
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=070a8073
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=02b47961
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=e12de651
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=d909be64
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=8af7e132
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=8d33a372
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=9af5921e
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=b230fb2c
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=9458752f
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=4748d565
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=b49b4d75
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=6ab87259
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=1d8ead3c
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=98f8e571
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=d7c96666
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=0d7e0b18
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=0f4d6a13
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=83e91a45
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=890bef11
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=1dd7933b
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=28f44b41
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=a147e260
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=3db21f02
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=8c15792a
+=== CONT  TestCmapPutInParallel/Put_in_parallel/Key=9f280c0a
+--- PASS: TestCmapPutInParallel (0.00s)
+    --- PASS: TestCmapPutInParallel/Put_in_parallel (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=5c3a4919 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=58406314 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=8d59b144 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=cc632a53 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=af709f74 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=02b47961 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=070a8073 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=e12de651 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=d909be64 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=8af7e132 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=8d33a372 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=9af5921e (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=b230fb2c (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=9458752f (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=4748d565 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=b49b4d75 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=6ab87259 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=1d8ead3c (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=98f8e571 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=d7c96666 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=0d7e0b18 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=0f4d6a13 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=83e91a45 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=890bef11 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=1dd7933b (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=28f44b41 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=a147e260 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=3db21f02 (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=8c15792a (0.00s)
+        --- PASS: TestCmapPutInParallel/Put_in_parallel/Key=9f280c0a (0.00s)
+=== RUN   TestCmapGetInParallel
+=== RUN   TestCmapGetInParallel/Get_in_parallel
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Put_in_parallel
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=edc73d11
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=edc73d11
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=fdf67258
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=fdf67258
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=ce558f7c
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=ce558f7c
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=24ef1365
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=24ef1365
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=cc15a772
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=cc15a772
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=3105576a
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=3105576a
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=48a9dc08
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=48a9dc08
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=d9a1f84a
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=d9a1f84a
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=c2dfc25d
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=c2dfc25d
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=cff03553
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=cff03553
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=c4e7bc1c
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=c4e7bc1c
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=75c6267e
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=75c6267e
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=69afac03
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=69afac03
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=20b6a123
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=20b6a123
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=c7f5fa21
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=c7f5fa21
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=63139e0d
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=63139e0d
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=8a32b836
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=8a32b836
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=181a8f47
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=181a8f47
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=38c45a3d
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=38c45a3d
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=b2a81b5f
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=b2a81b5f
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=25c1cc00
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=25c1cc00
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=136aec5c
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=136aec5c
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=7172883d
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=7172883d
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=2808d563
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=2808d563
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=69b5d567
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=69b5d567
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=b90fb255
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=b90fb255
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=6ec37177
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=6ec37177
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=e9080149
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=e9080149
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=ed759f3b
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=ed759f3b
+=== RUN   TestCmapGetInParallel/Get_in_parallel/Get:_Key=667c0b1e
+=== PAUSE TestCmapGetInParallel/Get_in_parallel/Get:_Key=667c0b1e
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=edc73d11
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=667c0b1e
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=2808d563
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=c7f5fa21
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=ed759f3b
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=3105576a
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=c4e7bc1c
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=20b6a123
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=cc15a772
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=38c45a3d
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=7172883d
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=136aec5c
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=25c1cc00
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=b2a81b5f
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=24ef1365
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=8a32b836
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=b90fb255
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=181a8f47
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=63139e0d
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=ce558f7c
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=d9a1f84a
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=cff03553
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=48a9dc08
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=c2dfc25d
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=69afac03
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=e9080149
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=6ec37177
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=75c6267e
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=fdf67258
+=== CONT  TestCmapGetInParallel/Get_in_parallel/Get:_Key=69b5d567
+--- PASS: TestCmapGetInParallel (0.00s)
+    --- PASS: TestCmapGetInParallel/Get_in_parallel (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Put_in_parallel (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=edc73d11 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=667c0b1e (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=2808d563 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=c7f5fa21 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=ed759f3b (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=3105576a (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=c4e7bc1c (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=20b6a123 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=cc15a772 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=38c45a3d (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=7172883d (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=136aec5c (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=25c1cc00 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=b2a81b5f (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=24ef1365 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=8a32b836 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=b90fb255 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=181a8f47 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=63139e0d (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=ce558f7c (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=d9a1f84a (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=cff03553 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=48a9dc08 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=c2dfc25d (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=69afac03 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=e9080149 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=6ec37177 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=75c6267e (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=fdf67258 (0.00s)
+        --- PASS: TestCmapGetInParallel/Get_in_parallel/Get:_Key=69b5d567 (0.00s)
+=== RUN   TestCmapDelete
+--- PASS: TestCmapDelete (0.00s)
+=== RUN   TestCmapDeleteInParallel
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=036f4b3a
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=036f4b3a
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=7dfb5d6a
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=7dfb5d6a
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=8b2ecc23
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=8b2ecc23
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=8aa3d116
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=8aa3d116
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=dfb2a763
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=dfb2a763
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=29725d18
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=29725d18
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=7c387127
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=7c387127
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=d8fdf007
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=d8fdf007
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=6a559924
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=6a559924
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=e214e37f
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=e214e37f
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=ba8bb259
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=ba8bb259
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=9ea04b4a
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=9ea04b4a
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=6027a922
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=6027a922
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=ad546d34
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=ad546d34
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=788eec41
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=788eec41
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=ce061066
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=ce061066
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=1138bc35
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=1138bc35
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=f2b1b777
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=f2b1b777
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=b97f0971
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=b97f0971
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=c4e0023f
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=c4e0023f
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=0a8c120f
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=0a8c120f
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=ab82285e
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=ab82285e
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=c21c8404
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=c21c8404
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=3563a460
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=3563a460
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=c6f9704f
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=c6f9704f
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=c846994e
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=c846994e
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=da910a5e
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=da910a5e
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=11a29c53
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=11a29c53
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=a4656e59
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=a4656e59
+=== RUN   TestCmapDeleteInParallel/Delete_in_parallel/Key=35e74535
+=== PAUSE TestCmapDeleteInParallel/Delete_in_parallel/Key=35e74535
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=036f4b3a
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=35e74535
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=ce061066
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=788eec41
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=a4656e59
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=11a29c53
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=ab82285e
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=da910a5e
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=c846994e
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=c6f9704f
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=f2b1b777
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=3563a460
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=b97f0971
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=1138bc35
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=c4e0023f
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=dfb2a763
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=8b2ecc23
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=6027a922
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=8aa3d116
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=0a8c120f
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=29725d18
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=7dfb5d6a
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=d8fdf007
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=ba8bb259
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=c21c8404
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=e214e37f
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=7c387127
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=6a559924
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=9ea04b4a
+=== CONT  TestCmapDeleteInParallel/Delete_in_parallel/Key=ad546d34
+--- PASS: TestCmapDeleteInParallel (0.00s)
+    --- PASS: TestCmapDeleteInParallel/Delete_in_parallel (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=036f4b3a (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=35e74535 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=ce061066 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=788eec41 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=a4656e59 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=11a29c53 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=ab82285e (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=da910a5e (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=c846994e (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=c6f9704f (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=f2b1b777 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=3563a460 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=b97f0971 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=1138bc35 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=c4e0023f (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=dfb2a763 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=8b2ecc23 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=6027a922 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=8aa3d116 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=0a8c120f (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=29725d18 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=7dfb5d6a (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=d8fdf007 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=ba8bb259 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=c21c8404 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=e214e37f (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=7c387127 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=6a559924 (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=9ea04b4a (0.00s)
+        --- PASS: TestCmapDeleteInParallel/Delete_in_parallel/Key=ad546d34 (0.00s)
+=== RUN   TestCmapAllInParallel
+=== RUN   TestCmapAllInParallel/All_in_parallel
+=== RUN   TestCmapAllInParallel/All_in_parallel/Put1
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Put1
+=== RUN   TestCmapAllInParallel/All_in_parallel/Put2
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Put2
+=== RUN   TestCmapAllInParallel/All_in_parallel/Get1
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Get1
+=== RUN   TestCmapAllInParallel/All_in_parallel/Get2
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Get2
+=== RUN   TestCmapAllInParallel/All_in_parallel/Delete1
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Delete1
+=== RUN   TestCmapAllInParallel/All_in_parallel/Delete2
+=== PAUSE TestCmapAllInParallel/All_in_parallel/Delete2
+=== CONT  TestCmapAllInParallel/All_in_parallel/Put1
+=== CONT  TestCmapAllInParallel/All_in_parallel/Get2
+=== CONT  TestCmapAllInParallel/All_in_parallel/Get1
+=== CONT  TestCmapAllInParallel/All_in_parallel/Delete2
+=== CONT  TestCmapAllInParallel/All_in_parallel/Put2
+=== CONT  TestCmapAllInParallel/All_in_parallel/Delete1
+--- PASS: TestCmapAllInParallel (0.14s)
+    --- PASS: TestCmapAllInParallel/All_in_parallel (0.00s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Get2 (0.05s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Delete1 (0.05s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Get1 (0.05s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Delete2 (0.05s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Put1 (0.08s)
+        --- PASS: TestCmapAllInParallel/All_in_parallel/Put2 (0.08s)
+=== RUN   TestPairNew
+=== RUN   TestPairNew/Key=,Element=59192005
+=== RUN   TestPairNew/Key=d3129616,Element=134594534
+=== RUN   TestPairNew/Key=71479900,Element=569964143
+=== RUN   TestPairNew/Key=76f00f2b,Element=768093703
+=== RUN   TestPairNew/Key=32c30808,Element="ec3b3f21"
+=== RUN   TestPairNew/Key=e2fa1445,Element=613697792
+=== RUN   TestPairNew/Key=0090a95b,Element="f8509420"
+=== RUN   TestPairNew/Key=5138dd0a,Element=1116945152
+=== RUN   TestPairNew/Key=14bb0f7b,Element=2019973586
+=== RUN   TestPairNew/Key=f10f184b,Element=1639378999
+=== RUN   TestPairNew/Key=edca0716,Element=178029964
+=== RUN   TestPairNew/Key=535f8072,Element="91cc1e32"
+=== RUN   TestPairNew/Key=e1188024,Element=1213547381
+=== RUN   TestPairNew/Key=b6ddb973,Element=719242898
+=== RUN   TestPairNew/Key=94609674,Element="e3f2a117"
+=== RUN   TestPairNew/Key=07f96118,Element=400135433
+=== RUN   TestPairNew/Key=94895c12,Element=2112023300
+=== RUN   TestPairNew/Key=34b6e364,Element=1041275795
+=== RUN   TestPairNew/Key=6867a705,Element=519650071
+=== RUN   TestPairNew/Key=57807e48,Element=1918933667
+=== RUN   TestPairNew/Key=a9c0a61c,Element="1ba3da6a"
+=== RUN   TestPairNew/Key=70371a39,Element="1e1f1474"
+=== RUN   TestPairNew/Key=3400ef11,Element="baf2eb29"
+=== RUN   TestPairNew/Key=744af51e,Element=616850147
+=== RUN   TestPairNew/Key=6f163905,Element="a6b8286d"
+=== RUN   TestPairNew/Key=c2724972,Element=1278925801
+=== RUN   TestPairNew/Key=b306e250,Element="e41aa424"
+=== RUN   TestPairNew/Key=b05d065b,Element=320035616
+=== RUN   TestPairNew/Key=bb959940,Element=1409742590
+=== RUN   TestPairNew/Key=02d0a070,Element="6002b728"
+=== RUN   TestPairNew/Key=ebb7c83c,Element=608242373
+=== RUN   TestPairNew/Key=eccf0f48,Element=1741265017
+=== RUN   TestPairNew/Key=695ade4c,Element=1298310367
+=== RUN   TestPairNew/Key=0ac5860b,Element="84933c69"
+=== RUN   TestPairNew/Key=233a153b,Element=1441807636
+=== RUN   TestPairNew/Key=a9d38243,Element=1017828454
+=== RUN   TestPairNew/Key=ec49775e,Element=879899194
+=== RUN   TestPairNew/Key=0b46c803,Element="69e3f937"
+=== RUN   TestPairNew/Key=c0ca4e02,Element=1921926640
+=== RUN   TestPairNew/Key=57d9ff61,Element="9a94491c"
+=== RUN   TestPairNew/Key=3cdc8875,Element=1937264926
+=== RUN   TestPairNew/Key=866bff08,Element="39e5e124"
+=== RUN   TestPairNew/Key=25132763,Element=1773902293
+=== RUN   TestPairNew/Key=59aa666e,Element=886666574
+=== RUN   TestPairNew/Key=e5285516,Element=2117291962
+=== RUN   TestPairNew/Key=aeef2d38,Element=108180577
+=== RUN   TestPairNew/Key=9d375967,Element=1420409560
+=== RUN   TestPairNew/Key=a1bda31f,Element="c5fe8e21"
+=== RUN   TestPairNew/Key=29270577,Element="5c83e970"
+=== RUN   TestPairNew/Key=e2dbc47e,Element="89503246"
+=== RUN   TestPairNew/Key=59554840,Element=346687651
+=== RUN   TestPairNew/Key=ce288162,Element=1657538842
+=== RUN   TestPairNew/Key=7cfde86f,Element=675932339
+=== RUN   TestPairNew/Key=ecf1746b,Element=488075221
+=== RUN   TestPairNew/Key=b040743d,Element=465449578
+=== RUN   TestPairNew/Key=ce1bb860,Element="4d611a71"
+=== RUN   TestPairNew/Key=21566940,Element=1843387187
+=== RUN   TestPairNew/Key=40d53858,Element=711678020
+=== RUN   TestPairNew/Key=3f864b56,Element="16af9d6c"
+=== RUN   TestPairNew/Key=51dc7e66,Element=1839502036
+=== RUN   TestPairNew/Key=919feb75,Element=1497203225
+=== RUN   TestPairNew/Key=fc973b47,Element="c67cc276"
+=== RUN   TestPairNew/Key=b7e5ef09,Element=541634248
+=== RUN   TestPairNew/Key=7a384258,Element="df1a431d"
+=== RUN   TestPairNew/Key=7ba4a56d,Element=922754116
+=== RUN   TestPairNew/Key=b9d26046,Element=2101155562
+=== RUN   TestPairNew/Key=7a110827,Element=1065983192
+=== RUN   TestPairNew/Key=c57a937d,Element=1373183338
+=== RUN   TestPairNew/Key=785bea67,Element=1625994028
+=== RUN   TestPairNew/Key=fa89b04f,Element="9ad35412"
+=== RUN   TestPairNew/Key=68a91118,Element=978636818
+=== RUN   TestPairNew/Key=a9548857,Element=533326367
+=== RUN   TestPairNew/Key=43137719,Element=1071712805
+=== RUN   TestPairNew/Key=b76af67c,Element=580578403
+=== RUN   TestPairNew/Key=9335225f,Element=852092665
+=== RUN   TestPairNew/Key=b7111b0c,Element=1844549609
+=== RUN   TestPairNew/Key=bf84867b,Element=1901113952
+=== RUN   TestPairNew/Key=6b8ab15c,Element="e8e25b5a"
+=== RUN   TestPairNew/Key=966b1e32,Element=1451066483
+=== RUN   TestPairNew/Key=aa61596d,Element="cafc0a3a"
+=== RUN   TestPairNew/Key=d186606f,Element="ec059555"
+=== RUN   TestPairNew/Key=e3b78905,Element=1502485777
+=== RUN   TestPairNew/Key=9b07df70,Element=2098696160
+=== RUN   TestPairNew/Key=35579919,Element=2102928550
+=== RUN   TestPairNew/Key=bd2ebf45,Element=1616070968
+=== RUN   TestPairNew/Key=b796220f,Element=829776233
+=== RUN   TestPairNew/Key=fcd6aa2a,Element=475540316
+=== RUN   TestPairNew/Key=13d1bb6e,Element=1994165054
+=== RUN   TestPairNew/Key=d7b9fa5a,Element=1601420159
+=== RUN   TestPairNew/Key=8594a50c,Element=863276803
+=== RUN   TestPairNew/Key=3569c312,Element=1784552422
+=== RUN   TestPairNew/Key=444b5903,Element=38630690
+=== RUN   TestPairNew/Key=108e1941,Element=1543536449
+=== RUN   TestPairNew/Key=b1a5965f,Element=1214670548
+=== RUN   TestPairNew/Key=f9dac875,Element="e98e0266"
+=== RUN   TestPairNew/Key=c49c556f,Element=1460373220
+=== RUN   TestPairNew/Key=6e62ca70,Element=1264849499
+=== RUN   TestPairNew/Key=43a6c057,Element=1789089818
+=== RUN   TestPairNew/Key=aba21a35,Element=1527969184
+=== RUN   TestPairNew/Key=9e0ad74f,Element=1817585371
+--- PASS: TestPairNew (0.00s)
+    --- PASS: TestPairNew/Key=,Element=59192005 (0.00s)
+    --- PASS: TestPairNew/Key=d3129616,Element=134594534 (0.00s)
+    --- PASS: TestPairNew/Key=71479900,Element=569964143 (0.00s)
+    --- PASS: TestPairNew/Key=76f00f2b,Element=768093703 (0.00s)
+    --- PASS: TestPairNew/Key=32c30808,Element="ec3b3f21" (0.00s)
+    --- PASS: TestPairNew/Key=e2fa1445,Element=613697792 (0.00s)
+    --- PASS: TestPairNew/Key=0090a95b,Element="f8509420" (0.00s)
+    --- PASS: TestPairNew/Key=5138dd0a,Element=1116945152 (0.00s)
+    --- PASS: TestPairNew/Key=14bb0f7b,Element=2019973586 (0.00s)
+    --- PASS: TestPairNew/Key=f10f184b,Element=1639378999 (0.00s)
+    --- PASS: TestPairNew/Key=edca0716,Element=178029964 (0.00s)
+    --- PASS: TestPairNew/Key=535f8072,Element="91cc1e32" (0.00s)
+    --- PASS: TestPairNew/Key=e1188024,Element=1213547381 (0.00s)
+    --- PASS: TestPairNew/Key=b6ddb973,Element=719242898 (0.00s)
+    --- PASS: TestPairNew/Key=94609674,Element="e3f2a117" (0.00s)
+    --- PASS: TestPairNew/Key=07f96118,Element=400135433 (0.00s)
+    --- PASS: TestPairNew/Key=94895c12,Element=2112023300 (0.00s)
+    --- PASS: TestPairNew/Key=34b6e364,Element=1041275795 (0.00s)
+    --- PASS: TestPairNew/Key=6867a705,Element=519650071 (0.00s)
+    --- PASS: TestPairNew/Key=57807e48,Element=1918933667 (0.00s)
+    --- PASS: TestPairNew/Key=a9c0a61c,Element="1ba3da6a" (0.00s)
+    --- PASS: TestPairNew/Key=70371a39,Element="1e1f1474" (0.00s)
+    --- PASS: TestPairNew/Key=3400ef11,Element="baf2eb29" (0.00s)
+    --- PASS: TestPairNew/Key=744af51e,Element=616850147 (0.00s)
+    --- PASS: TestPairNew/Key=6f163905,Element="a6b8286d" (0.00s)
+    --- PASS: TestPairNew/Key=c2724972,Element=1278925801 (0.00s)
+    --- PASS: TestPairNew/Key=b306e250,Element="e41aa424" (0.00s)
+    --- PASS: TestPairNew/Key=b05d065b,Element=320035616 (0.00s)
+    --- PASS: TestPairNew/Key=bb959940,Element=1409742590 (0.00s)
+    --- PASS: TestPairNew/Key=02d0a070,Element="6002b728" (0.00s)
+    --- PASS: TestPairNew/Key=ebb7c83c,Element=608242373 (0.00s)
+    --- PASS: TestPairNew/Key=eccf0f48,Element=1741265017 (0.00s)
+    --- PASS: TestPairNew/Key=695ade4c,Element=1298310367 (0.00s)
+    --- PASS: TestPairNew/Key=0ac5860b,Element="84933c69" (0.00s)
+    --- PASS: TestPairNew/Key=233a153b,Element=1441807636 (0.00s)
+    --- PASS: TestPairNew/Key=a9d38243,Element=1017828454 (0.00s)
+    --- PASS: TestPairNew/Key=ec49775e,Element=879899194 (0.00s)
+    --- PASS: TestPairNew/Key=0b46c803,Element="69e3f937" (0.00s)
+    --- PASS: TestPairNew/Key=c0ca4e02,Element=1921926640 (0.00s)
+    --- PASS: TestPairNew/Key=57d9ff61,Element="9a94491c" (0.00s)
+    --- PASS: TestPairNew/Key=3cdc8875,Element=1937264926 (0.00s)
+    --- PASS: TestPairNew/Key=866bff08,Element="39e5e124" (0.00s)
+    --- PASS: TestPairNew/Key=25132763,Element=1773902293 (0.00s)
+    --- PASS: TestPairNew/Key=59aa666e,Element=886666574 (0.00s)
+    --- PASS: TestPairNew/Key=e5285516,Element=2117291962 (0.00s)
+    --- PASS: TestPairNew/Key=aeef2d38,Element=108180577 (0.00s)
+    --- PASS: TestPairNew/Key=9d375967,Element=1420409560 (0.00s)
+    --- PASS: TestPairNew/Key=a1bda31f,Element="c5fe8e21" (0.00s)
+    --- PASS: TestPairNew/Key=29270577,Element="5c83e970" (0.00s)
+    --- PASS: TestPairNew/Key=e2dbc47e,Element="89503246" (0.00s)
+    --- PASS: TestPairNew/Key=59554840,Element=346687651 (0.00s)
+    --- PASS: TestPairNew/Key=ce288162,Element=1657538842 (0.00s)
+    --- PASS: TestPairNew/Key=7cfde86f,Element=675932339 (0.00s)
+    --- PASS: TestPairNew/Key=ecf1746b,Element=488075221 (0.00s)
+    --- PASS: TestPairNew/Key=b040743d,Element=465449578 (0.00s)
+    --- PASS: TestPairNew/Key=ce1bb860,Element="4d611a71" (0.00s)
+    --- PASS: TestPairNew/Key=21566940,Element=1843387187 (0.00s)
+    --- PASS: TestPairNew/Key=40d53858,Element=711678020 (0.00s)
+    --- PASS: TestPairNew/Key=3f864b56,Element="16af9d6c" (0.00s)
+    --- PASS: TestPairNew/Key=51dc7e66,Element=1839502036 (0.00s)
+    --- PASS: TestPairNew/Key=919feb75,Element=1497203225 (0.00s)
+    --- PASS: TestPairNew/Key=fc973b47,Element="c67cc276" (0.00s)
+    --- PASS: TestPairNew/Key=b7e5ef09,Element=541634248 (0.00s)
+    --- PASS: TestPairNew/Key=7a384258,Element="df1a431d" (0.00s)
+    --- PASS: TestPairNew/Key=7ba4a56d,Element=922754116 (0.00s)
+    --- PASS: TestPairNew/Key=b9d26046,Element=2101155562 (0.00s)
+    --- PASS: TestPairNew/Key=7a110827,Element=1065983192 (0.00s)
+    --- PASS: TestPairNew/Key=c57a937d,Element=1373183338 (0.00s)
+    --- PASS: TestPairNew/Key=785bea67,Element=1625994028 (0.00s)
+    --- PASS: TestPairNew/Key=fa89b04f,Element="9ad35412" (0.00s)
+    --- PASS: TestPairNew/Key=68a91118,Element=978636818 (0.00s)
+    --- PASS: TestPairNew/Key=a9548857,Element=533326367 (0.00s)
+    --- PASS: TestPairNew/Key=43137719,Element=1071712805 (0.00s)
+    --- PASS: TestPairNew/Key=b76af67c,Element=580578403 (0.00s)
+    --- PASS: TestPairNew/Key=9335225f,Element=852092665 (0.00s)
+    --- PASS: TestPairNew/Key=b7111b0c,Element=1844549609 (0.00s)
+    --- PASS: TestPairNew/Key=bf84867b,Element=1901113952 (0.00s)
+    --- PASS: TestPairNew/Key=6b8ab15c,Element="e8e25b5a" (0.00s)
+    --- PASS: TestPairNew/Key=966b1e32,Element=1451066483 (0.00s)
+    --- PASS: TestPairNew/Key=aa61596d,Element="cafc0a3a" (0.00s)
+    --- PASS: TestPairNew/Key=d186606f,Element="ec059555" (0.00s)
+    --- PASS: TestPairNew/Key=e3b78905,Element=1502485777 (0.00s)
+    --- PASS: TestPairNew/Key=9b07df70,Element=2098696160 (0.00s)
+    --- PASS: TestPairNew/Key=35579919,Element=2102928550 (0.00s)
+    --- PASS: TestPairNew/Key=bd2ebf45,Element=1616070968 (0.00s)
+    --- PASS: TestPairNew/Key=b796220f,Element=829776233 (0.00s)
+    --- PASS: TestPairNew/Key=fcd6aa2a,Element=475540316 (0.00s)
+    --- PASS: TestPairNew/Key=13d1bb6e,Element=1994165054 (0.00s)
+    --- PASS: TestPairNew/Key=d7b9fa5a,Element=1601420159 (0.00s)
+    --- PASS: TestPairNew/Key=8594a50c,Element=863276803 (0.00s)
+    --- PASS: TestPairNew/Key=3569c312,Element=1784552422 (0.00s)
+    --- PASS: TestPairNew/Key=444b5903,Element=38630690 (0.00s)
+    --- PASS: TestPairNew/Key=108e1941,Element=1543536449 (0.00s)
+    --- PASS: TestPairNew/Key=b1a5965f,Element=1214670548 (0.00s)
+    --- PASS: TestPairNew/Key=f9dac875,Element="e98e0266" (0.00s)
+    --- PASS: TestPairNew/Key=c49c556f,Element=1460373220 (0.00s)
+    --- PASS: TestPairNew/Key=6e62ca70,Element=1264849499 (0.00s)
+    --- PASS: TestPairNew/Key=43a6c057,Element=1789089818 (0.00s)
+    --- PASS: TestPairNew/Key=aba21a35,Element=1527969184 (0.00s)
+    --- PASS: TestPairNew/Key=9e0ad74f,Element=1817585371 (0.00s)
+=== RUN   TestPairKeyAndHashAndElement
+=== RUN   TestPairKeyAndHashAndElement/Key=e70ffa00,Element=596349011
+=== RUN   TestPairKeyAndHashAndElement/Key=ab40c31f,Element=954512918
+=== RUN   TestPairKeyAndHashAndElement/Key=d983e219,Element=1156860764
+=== RUN   TestPairKeyAndHashAndElement/Key=3879be12,Element=877112158
+=== RUN   TestPairKeyAndHashAndElement/Key=48b2d517,Element=316776322
+=== RUN   TestPairKeyAndHashAndElement/Key=9ec0b066,Element=1141326113
+=== RUN   TestPairKeyAndHashAndElement/Key=9d614647,Element=1298510081
+=== RUN   TestPairKeyAndHashAndElement/Key=0af34910,Element="1cc8ab79"
+=== RUN   TestPairKeyAndHashAndElement/Key=4bfcf646,Element=215409944
+=== RUN   TestPairKeyAndHashAndElement/Key=be75487f,Element=135515687
+=== RUN   TestPairKeyAndHashAndElement/Key=2cae8851,Element=1599599636
+=== RUN   TestPairKeyAndHashAndElement/Key=306a983f,Element=53211848
+=== RUN   TestPairKeyAndHashAndElement/Key=e45e8c5c,Element="8f23ad56"
+=== RUN   TestPairKeyAndHashAndElement/Key=7e664a17,Element=1335644413
+=== RUN   TestPairKeyAndHashAndElement/Key=a9066a74,Element=1651990844
+=== RUN   TestPairKeyAndHashAndElement/Key=ce46424b,Element=1184091404
+=== RUN   TestPairKeyAndHashAndElement/Key=86671f26,Element=723812867
+=== RUN   TestPairKeyAndHashAndElement/Key=4dd8b832,Element=419537483
+=== RUN   TestPairKeyAndHashAndElement/Key=decdbb15,Element="5ed11a5a"
+=== RUN   TestPairKeyAndHashAndElement/Key=559e3a68,Element=1140289736
+=== RUN   TestPairKeyAndHashAndElement/Key=54b70979,Element=465611291
+=== RUN   TestPairKeyAndHashAndElement/Key=5f72ef64,Element="2bc0682f"
+=== RUN   TestPairKeyAndHashAndElement/Key=b76b3645,Element=2014027613
+=== RUN   TestPairKeyAndHashAndElement/Key=84f76874,Element=847660016
+=== RUN   TestPairKeyAndHashAndElement/Key=b79a7917,Element=816080998
+=== RUN   TestPairKeyAndHashAndElement/Key=7d1c9d1b,Element="6c983a5e"
+=== RUN   TestPairKeyAndHashAndElement/Key=d2646e70,Element="2f6eec1a"
+=== RUN   TestPairKeyAndHashAndElement/Key=e82d9513,Element=1500293135
+=== RUN   TestPairKeyAndHashAndElement/Key=7c7d1442,Element=937303577
+=== RUN   TestPairKeyAndHashAndElement/Key=b51fc42e,Element=297068368
+--- PASS: TestPairKeyAndHashAndElement (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=e70ffa00,Element=596349011 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=ab40c31f,Element=954512918 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=d983e219,Element=1156860764 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=3879be12,Element=877112158 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=48b2d517,Element=316776322 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=9ec0b066,Element=1141326113 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=9d614647,Element=1298510081 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=0af34910,Element="1cc8ab79" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=4bfcf646,Element=215409944 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=be75487f,Element=135515687 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=2cae8851,Element=1599599636 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=306a983f,Element=53211848 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=e45e8c5c,Element="8f23ad56" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=7e664a17,Element=1335644413 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=a9066a74,Element=1651990844 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=ce46424b,Element=1184091404 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=86671f26,Element=723812867 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=4dd8b832,Element=419537483 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=decdbb15,Element="5ed11a5a" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=559e3a68,Element=1140289736 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=54b70979,Element=465611291 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=5f72ef64,Element="2bc0682f" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=b76b3645,Element=2014027613 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=84f76874,Element=847660016 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=b79a7917,Element=816080998 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=7d1c9d1b,Element="6c983a5e" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=d2646e70,Element="2f6eec1a" (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=e82d9513,Element=1500293135 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=7c7d1442,Element=937303577 (0.00s)
+    --- PASS: TestPairKeyAndHashAndElement/Key=b51fc42e,Element=297068368 (0.00s)
+=== RUN   TestPairSet
+=== RUN   TestPairSet/Key=1dad7f26,Element=562046482
+=== RUN   TestPairSet/Key=7c277a23,Element="8143ba03"
+=== RUN   TestPairSet/Key=00428d1e,Element=633364436
+=== RUN   TestPairSet/Key=461b3733,Element=1741923455
+=== RUN   TestPairSet/Key=1e455106,Element=1037753338
+=== RUN   TestPairSet/Key=9cfab60e,Element="99fd7101"
+=== RUN   TestPairSet/Key=b0375e16,Element=1908218155
+=== RUN   TestPairSet/Key=e0639355,Element=229886903
+=== RUN   TestPairSet/Key=385a2b45,Element="7d474b2c"
+=== RUN   TestPairSet/Key=abdeaf0a,Element=656063530
+=== RUN   TestPairSet/Key=1ca19036,Element=850263634
+=== RUN   TestPairSet/Key=35988604,Element="19ab6d28"
+=== RUN   TestPairSet/Key=4bb74c22,Element="6d105c33"
+=== RUN   TestPairSet/Key=3aa0b46c,Element="61ad2873"
+=== RUN   TestPairSet/Key=3f9d0d3e,Element="f4df075a"
+=== RUN   TestPairSet/Key=6322415f,Element="b591545a"
+=== RUN   TestPairSet/Key=8c10a035,Element=675504965
+=== RUN   TestPairSet/Key=c6488a76,Element=2125435141
+=== RUN   TestPairSet/Key=55162911,Element=571689406
+=== RUN   TestPairSet/Key=bbb66806,Element=1925218880
+=== RUN   TestPairSet/Key=be8eed09,Element="9566f072"
+=== RUN   TestPairSet/Key=916e6b77,Element=1651899613
+=== RUN   TestPairSet/Key=a18c1529,Element=1516291604
+=== RUN   TestPairSet/Key=fc7bf608,Element="1314bb3c"
+=== RUN   TestPairSet/Key=99bd5115,Element=1745906390
+=== RUN   TestPairSet/Key=83689a1c,Element="6dde2a30"
+=== RUN   TestPairSet/Key=cfd39804,Element=762997666
+=== RUN   TestPairSet/Key=999f7948,Element="0a2bdc18"
+=== RUN   TestPairSet/Key=b812ae58,Element=100176640
+=== RUN   TestPairSet/Key=f29f0528,Element=1997645177
+--- PASS: TestPairSet (0.00s)
+    --- PASS: TestPairSet/Key=1dad7f26,Element=562046482 (0.00s)
+    --- PASS: TestPairSet/Key=7c277a23,Element="8143ba03" (0.00s)
+    --- PASS: TestPairSet/Key=00428d1e,Element=633364436 (0.00s)
+    --- PASS: TestPairSet/Key=461b3733,Element=1741923455 (0.00s)
+    --- PASS: TestPairSet/Key=1e455106,Element=1037753338 (0.00s)
+    --- PASS: TestPairSet/Key=9cfab60e,Element="99fd7101" (0.00s)
+    --- PASS: TestPairSet/Key=b0375e16,Element=1908218155 (0.00s)
+    --- PASS: TestPairSet/Key=e0639355,Element=229886903 (0.00s)
+    --- PASS: TestPairSet/Key=385a2b45,Element="7d474b2c" (0.00s)
+    --- PASS: TestPairSet/Key=abdeaf0a,Element=656063530 (0.00s)
+    --- PASS: TestPairSet/Key=1ca19036,Element=850263634 (0.00s)
+    --- PASS: TestPairSet/Key=35988604,Element="19ab6d28" (0.00s)
+    --- PASS: TestPairSet/Key=4bb74c22,Element="6d105c33" (0.00s)
+    --- PASS: TestPairSet/Key=3aa0b46c,Element="61ad2873" (0.00s)
+    --- PASS: TestPairSet/Key=3f9d0d3e,Element="f4df075a" (0.00s)
+    --- PASS: TestPairSet/Key=6322415f,Element="b591545a" (0.00s)
+    --- PASS: TestPairSet/Key=8c10a035,Element=675504965 (0.00s)
+    --- PASS: TestPairSet/Key=c6488a76,Element=2125435141 (0.00s)
+    --- PASS: TestPairSet/Key=55162911,Element=571689406 (0.00s)
+    --- PASS: TestPairSet/Key=bbb66806,Element=1925218880 (0.00s)
+    --- PASS: TestPairSet/Key=be8eed09,Element="9566f072" (0.00s)
+    --- PASS: TestPairSet/Key=916e6b77,Element=1651899613 (0.00s)
+    --- PASS: TestPairSet/Key=a18c1529,Element=1516291604 (0.00s)
+    --- PASS: TestPairSet/Key=fc7bf608,Element="1314bb3c" (0.00s)
+    --- PASS: TestPairSet/Key=99bd5115,Element=1745906390 (0.00s)
+    --- PASS: TestPairSet/Key=83689a1c,Element="6dde2a30" (0.00s)
+    --- PASS: TestPairSet/Key=cfd39804,Element=762997666 (0.00s)
+    --- PASS: TestPairSet/Key=999f7948,Element="0a2bdc18" (0.00s)
+    --- PASS: TestPairSet/Key=b812ae58,Element=100176640 (0.00s)
+    --- PASS: TestPairSet/Key=f29f0528,Element=1997645177 (0.00s)
+=== RUN   TestPairNext
+--- PASS: TestPairNext (0.00s)
+=== RUN   TestPairCopy
+=== RUN   TestPairCopy/Key=f1cefd4d,Element=1877875153
+=== RUN   TestPairCopy/Key=ce05b738,Element="33530670"
+=== RUN   TestPairCopy/Key=23abca63,Element="61b55b58"
+=== RUN   TestPairCopy/Key=4eb8434a,Element=122805517
+=== RUN   TestPairCopy/Key=d5e97a6f,Element="fd4fd437"
+=== RUN   TestPairCopy/Key=9bf52e25,Element="5fef1573"
+=== RUN   TestPairCopy/Key=07386704,Element=1401124354
+=== RUN   TestPairCopy/Key=2786493f,Element=1337350577
+=== RUN   TestPairCopy/Key=d9670845,Element=2053608343
+=== RUN   TestPairCopy/Key=40feea16,Element=124790140
+=== RUN   TestPairCopy/Key=d7a50313,Element="d1c4b24d"
+=== RUN   TestPairCopy/Key=12785209,Element="8e89ac6f"
+=== RUN   TestPairCopy/Key=be71c365,Element=2130414604
+=== RUN   TestPairCopy/Key=ecbfc750,Element=1191269894
+=== RUN   TestPairCopy/Key=bc719f30,Element=5872712
+=== RUN   TestPairCopy/Key=bafd0673,Element="8f75d479"
+=== RUN   TestPairCopy/Key=0e855651,Element=515935744
+=== RUN   TestPairCopy/Key=54404a12,Element=1362990308
+=== RUN   TestPairCopy/Key=82317c2c,Element="e54e6854"
+=== RUN   TestPairCopy/Key=fa87215a,Element="8779873b"
+=== RUN   TestPairCopy/Key=79481740,Element=1304002561
+=== RUN   TestPairCopy/Key=418c2800,Element="aeffa546"
+=== RUN   TestPairCopy/Key=d3351716,Element="c7a31c45"
+=== RUN   TestPairCopy/Key=99fe0a2a,Element="7ab0a656"
+=== RUN   TestPairCopy/Key=8876d016,Element=523852223
+=== RUN   TestPairCopy/Key=931e4166,Element="6a9c3857"
+=== RUN   TestPairCopy/Key=92cf7f7a,Element="83674f3f"
+=== RUN   TestPairCopy/Key=a3559405,Element=1515258502
+=== RUN   TestPairCopy/Key=e538f546,Element=683051626
+=== RUN   TestPairCopy/Key=0865655b,Element=1847913289
+--- PASS: TestPairCopy (0.00s)
+    --- PASS: TestPairCopy/Key=f1cefd4d,Element=1877875153 (0.00s)
+    --- PASS: TestPairCopy/Key=ce05b738,Element="33530670" (0.00s)
+    --- PASS: TestPairCopy/Key=23abca63,Element="61b55b58" (0.00s)
+    --- PASS: TestPairCopy/Key=4eb8434a,Element=122805517 (0.00s)
+    --- PASS: TestPairCopy/Key=d5e97a6f,Element="fd4fd437" (0.00s)
+    --- PASS: TestPairCopy/Key=9bf52e25,Element="5fef1573" (0.00s)
+    --- PASS: TestPairCopy/Key=07386704,Element=1401124354 (0.00s)
+    --- PASS: TestPairCopy/Key=2786493f,Element=1337350577 (0.00s)
+    --- PASS: TestPairCopy/Key=d9670845,Element=2053608343 (0.00s)
+    --- PASS: TestPairCopy/Key=40feea16,Element=124790140 (0.00s)
+    --- PASS: TestPairCopy/Key=d7a50313,Element="d1c4b24d" (0.00s)
+    --- PASS: TestPairCopy/Key=12785209,Element="8e89ac6f" (0.00s)
+    --- PASS: TestPairCopy/Key=be71c365,Element=2130414604 (0.00s)
+    --- PASS: TestPairCopy/Key=ecbfc750,Element=1191269894 (0.00s)
+    --- PASS: TestPairCopy/Key=bc719f30,Element=5872712 (0.00s)
+    --- PASS: TestPairCopy/Key=bafd0673,Element="8f75d479" (0.00s)
+    --- PASS: TestPairCopy/Key=0e855651,Element=515935744 (0.00s)
+    --- PASS: TestPairCopy/Key=54404a12,Element=1362990308 (0.00s)
+    --- PASS: TestPairCopy/Key=82317c2c,Element="e54e6854" (0.00s)
+    --- PASS: TestPairCopy/Key=fa87215a,Element="8779873b" (0.00s)
+    --- PASS: TestPairCopy/Key=79481740,Element=1304002561 (0.00s)
+    --- PASS: TestPairCopy/Key=418c2800,Element="aeffa546" (0.00s)
+    --- PASS: TestPairCopy/Key=d3351716,Element="c7a31c45" (0.00s)
+    --- PASS: TestPairCopy/Key=99fe0a2a,Element="7ab0a656" (0.00s)
+    --- PASS: TestPairCopy/Key=8876d016,Element=523852223 (0.00s)
+    --- PASS: TestPairCopy/Key=931e4166,Element="6a9c3857" (0.00s)
+    --- PASS: TestPairCopy/Key=92cf7f7a,Element="83674f3f" (0.00s)
+    --- PASS: TestPairCopy/Key=a3559405,Element=1515258502 (0.00s)
+    --- PASS: TestPairCopy/Key=e538f546,Element=683051626 (0.00s)
+    --- PASS: TestPairCopy/Key=0865655b,Element=1847913289 (0.00s)
+=== RUN   TestSegmentNew
+--- PASS: TestSegmentNew (0.00s)
+=== RUN   TestSegmentPut
+--- PASS: TestSegmentPut (0.00s)
+=== RUN   TestSegmentPutInParallel
+=== RUN   TestSegmentPutInParallel/Put_in_parallel
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=d9a34515
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=d9a34515
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=2bad6128
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=2bad6128
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=c5bcb537
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=c5bcb537
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=fd131674
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=fd131674
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=bff78a27
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=bff78a27
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=14560a36
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=14560a36
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=c01fbb47
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=c01fbb47
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=eb252063
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=eb252063
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=a5cee111
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=a5cee111
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=2ef11638
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=2ef11638
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=8fbfd54b
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=8fbfd54b
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=9a2b2e7d
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=9a2b2e7d
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=0c6cf021
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=0c6cf021
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=5a40af4d
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=5a40af4d
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=9be26c39
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=9be26c39
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=a438a51d
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=a438a51d
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=20f02c57
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=20f02c57
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=1bf2fb71
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=1bf2fb71
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=579d5278
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=579d5278
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=9c94f210
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=9c94f210
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=9b00ad6a
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=9b00ad6a
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=1e4fd814
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=1e4fd814
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=c1de2c77
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=c1de2c77
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=835e4d7e
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=835e4d7e
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=a2013616
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=a2013616
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=537deb47
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=537deb47
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=a1249675
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=a1249675
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=a0f1164d
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=a0f1164d
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=f101d319
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=f101d319
+=== RUN   TestSegmentPutInParallel/Put_in_parallel/Key=1bc4b65d
+=== PAUSE TestSegmentPutInParallel/Put_in_parallel/Key=1bc4b65d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=d9a34515
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=1bc4b65d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=a438a51d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=9be26c39
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=5a40af4d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=eb252063
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=c5bcb537
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=14560a36
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=c1de2c77
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=f101d319
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=a0f1164d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=a1249675
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=2bad6128
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=537deb47
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=a2013616
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=9c94f210
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=835e4d7e
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=bff78a27
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=1e4fd814
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=9b00ad6a
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=1bf2fb71
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=20f02c57
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=579d5278
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=fd131674
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=8fbfd54b
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=2ef11638
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=c01fbb47
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=0c6cf021
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=9a2b2e7d
+=== CONT  TestSegmentPutInParallel/Put_in_parallel/Key=a5cee111
+--- PASS: TestSegmentPutInParallel (0.00s)
+    --- PASS: TestSegmentPutInParallel/Put_in_parallel (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=d9a34515 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=1bc4b65d (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=a438a51d (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=9be26c39 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=5a40af4d (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=eb252063 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=c5bcb537 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=14560a36 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=c1de2c77 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=f101d319 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=a0f1164d (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=a1249675 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=2bad6128 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=537deb47 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=a2013616 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=9c94f210 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=835e4d7e (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=bff78a27 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=1e4fd814 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=9b00ad6a (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=1bf2fb71 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=20f02c57 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=579d5278 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=fd131674 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=8fbfd54b (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=2ef11638 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=c01fbb47 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=0c6cf021 (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=9a2b2e7d (0.00s)
+        --- PASS: TestSegmentPutInParallel/Put_in_parallel/Key=a5cee111 (0.00s)
+=== RUN   TestSegmentGetInParallel
+=== RUN   TestSegmentGetInParallel/Get_in_parallel
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Put_in_parallel
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=04614a07
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=04614a07
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=622dd25c
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=622dd25c
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=3dfddc42
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=3dfddc42
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=79689233
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=79689233
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ad25ee2a
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ad25ee2a
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a71f781d
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a71f781d
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=0d1e0077
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=0d1e0077
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bec46353
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bec46353
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b9112a28
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b9112a28
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=334c9d7b
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=334c9d7b
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=fc9d2616
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=fc9d2616
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ce3a1a2d
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ce3a1a2d
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=83b07540
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=83b07540
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1a201a1d
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1a201a1d
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=7cbe4a1d
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=7cbe4a1d
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=071f8831
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=071f8831
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b8872839
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b8872839
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=11df1827
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=11df1827
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ed08220a
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ed08220a
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=6c294249
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=6c294249
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=00fe7f1f
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=00fe7f1f
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=617c9d2a
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=617c9d2a
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=2e20fb37
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=2e20fb37
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=37f50638
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=37f50638
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=9ca5ab31
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=9ca5ab31
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bfeab52e
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bfeab52e
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1c67d129
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1c67d129
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=672ee65d
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=672ee65d
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a13ba72e
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a13ba72e
+=== RUN   TestSegmentGetInParallel/Get_in_parallel/Get:_Key=238cef73
+=== PAUSE TestSegmentGetInParallel/Get_in_parallel/Get:_Key=238cef73
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=04614a07
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a13ba72e
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bfeab52e
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=672ee65d
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=238cef73
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=334c9d7b
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b9112a28
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=2e20fb37
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b8872839
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=071f8831
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1a201a1d
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bec46353
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a71f781d
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=0d1e0077
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ad25ee2a
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=11df1827
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=617c9d2a
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=00fe7f1f
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=7cbe4a1d
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=6c294249
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ed08220a
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=622dd25c
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=79689233
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=9ca5ab31
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=fc9d2616
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=37f50638
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1c67d129
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=3dfddc42
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=83b07540
+=== CONT  TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ce3a1a2d
+--- PASS: TestSegmentGetInParallel (0.00s)
+    --- PASS: TestSegmentGetInParallel/Get_in_parallel (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Put_in_parallel (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=04614a07 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a13ba72e (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bfeab52e (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=672ee65d (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=238cef73 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=334c9d7b (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b9112a28 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=2e20fb37 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=b8872839 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=071f8831 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1a201a1d (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=bec46353 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=a71f781d (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=0d1e0077 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ad25ee2a (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=11df1827 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=617c9d2a (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=00fe7f1f (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=7cbe4a1d (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=6c294249 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ed08220a (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=622dd25c (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=79689233 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=9ca5ab31 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=fc9d2616 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=37f50638 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=1c67d129 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=3dfddc42 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=83b07540 (0.00s)
+        --- PASS: TestSegmentGetInParallel/Get_in_parallel/Get:_Key=ce3a1a2d (0.00s)
+=== RUN   TestSegmentDelete
+--- PASS: TestSegmentDelete (0.00s)
+=== RUN   TestSegmentDeleteInParallel
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=f073ef5d
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=f073ef5d
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=7624d356
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=7624d356
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=3667b440
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=3667b440
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=71061c7c
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=71061c7c
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=93cbda49
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=93cbda49
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=d12bed6a
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=d12bed6a
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=b5a04349
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=b5a04349
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=d3a0c936
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=d3a0c936
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=2110495d
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=2110495d
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=9697c822
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=9697c822
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=1899bf35
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=1899bf35
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=02015a0d
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=02015a0d
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=4b57ab39
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=4b57ab39
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=5c0b6a3c
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=5c0b6a3c
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=f73eab7c
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=f73eab7c
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=02e7c64a
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=02e7c64a
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=2623a04c
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=2623a04c
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=90a00e2c
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=90a00e2c
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=d1bf893f
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=d1bf893f
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=2555bf1f
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=2555bf1f
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=46a7732d
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=46a7732d
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=d6c7c948
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=d6c7c948
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=1e7e5138
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=1e7e5138
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=3ad9192d
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=3ad9192d
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=5f991e6a
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=5f991e6a
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=d0d73172
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=d0d73172
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=ede3b01b
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=ede3b01b
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=e7062c3f
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=e7062c3f
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=650ce269
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=650ce269
+=== RUN   TestSegmentDeleteInParallel/Delete_in_parallel/Key=0dd4a23b
+=== PAUSE TestSegmentDeleteInParallel/Delete_in_parallel/Key=0dd4a23b
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=f073ef5d
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=0dd4a23b
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=02e7c64a
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=1e7e5138
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=46a7732d
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=d6c7c948
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=d3a0c936
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=2555bf1f
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=b5a04349
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=d12bed6a
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=650ce269
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=90a00e2c
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=93cbda49
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=71061c7c
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=2623a04c
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=d1bf893f
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=7624d356
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=3667b440
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=4b57ab39
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=1899bf35
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=d0d73172
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=5c0b6a3c
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=02015a0d
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=2110495d
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=9697c822
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=5f991e6a
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=3ad9192d
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=ede3b01b
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=e7062c3f
+=== CONT  TestSegmentDeleteInParallel/Delete_in_parallel/Key=f73eab7c
+--- PASS: TestSegmentDeleteInParallel (0.00s)
+    --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=f073ef5d (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=0dd4a23b (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=02e7c64a (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=1e7e5138 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=46a7732d (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=d6c7c948 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=d3a0c936 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=2555bf1f (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=b5a04349 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=d12bed6a (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=650ce269 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=90a00e2c (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=93cbda49 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=2623a04c (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=71061c7c (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=7624d356 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=d1bf893f (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=3667b440 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=4b57ab39 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=1899bf35 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=d0d73172 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=5c0b6a3c (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=02015a0d (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=2110495d (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=9697c822 (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=5f991e6a (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=3ad9192d (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=ede3b01b (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=e7062c3f (0.00s)
+        --- PASS: TestSegmentDeleteInParallel/Delete_in_parallel/Key=f73eab7c (0.00s)
+=== RUN   TestSegmentAllInParallel
+=== RUN   TestSegmentAllInParallel/All_in_parallel
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Put1
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Put1
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Put2
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Put2
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Get1
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Get1
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Get2
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Get2
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Delete1
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Delete1
+=== RUN   TestSegmentAllInParallel/All_in_parallel/Delete2
+=== PAUSE TestSegmentAllInParallel/All_in_parallel/Delete2
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Put1
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Get2
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Delete2
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Get1
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Delete1
+=== CONT  TestSegmentAllInParallel/All_in_parallel/Put2
+--- PASS: TestSegmentAllInParallel (2.61s)
+    --- PASS: TestSegmentAllInParallel/All_in_parallel (0.00s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Get1 (0.59s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Get2 (0.59s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Put2 (1.71s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Put1 (1.78s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Delete2 (2.60s)
+        --- PASS: TestSegmentAllInParallel/All_in_parallel/Delete1 (2.60s)
+PASS
+ok  	github.com/rszhh/gowcer/cmap	4.983s
