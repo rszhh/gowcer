@@ -39,12 +39,12 @@ func main() {
 
 	err = ch.ExchangeDeclare(
 		"url_direct", // name
-		"direct",      // type
-		true,          // durable
-		false,         // auto-deleted
-		false,         // internal
-		false,         // no-wait
-		nil,           // arguments
+		"direct",     // type
+		true,         // durable
+		false,        // auto-deleted
+		false,        // internal
+		false,        // no-wait
+		nil,          // arguments
 	)
 	failOnError(err, "Failed to declare an exchange")
 
@@ -58,21 +58,20 @@ func main() {
 	)
 	failOnError(err, "Failed to declare a queue")
 
-	if len(os.Args) < 2 {
-		log.Printf("Usage: %s [info] [warning] [error]", os.Args[0])
+	if len(os.Args) != 2 {
+		log.Printf("Usage: %s ip-address [provide only one]", os.Args[0])
 		os.Exit(0)
 	}
-	for _, s := range os.Args[1:] {
-		log.Printf("Binding queue %s to exchange %s with routing key %s",
-			q.Name, "url_direct", s)
-		err = ch.QueueBind(
-			q.Name,        // queue name
-			s,             // routing key
-			"url_direct", // exchange
-			false,
-			nil)
-		failOnError(err, "Failed to bind a queue")
-	}
+
+	log.Printf("Binding queue %s to exchange %s with routing key %s",
+		q.Name, "url_direct", os.Args[1])
+	err = ch.QueueBind(
+		q.Name,       // queue name
+		os.Args[1],   // routing key
+		"url_direct", // exchange
+		false,
+		nil)
+	failOnError(err, "Failed to bind a queue")
 
 	msgs, err := ch.Consume(
 		q.Name, // queue
@@ -100,8 +99,6 @@ func main() {
 			}
 			log.Printf("get target url: %s", string(d.Body))
 
-			// 阻塞执行 运行finder 的脚本
-			// go run finder.go -first http://zhihu.sogou.com/zhihu\?query\=golang+logo -domains zhihu.com
 			u, err := url.Parse(string(d.Body))
 			if err != nil && conn != nil {
 				failOnError(err, "An error happened when parsed url.")
@@ -114,6 +111,7 @@ func main() {
 			}
 			host := u.Hostname()
 
+			// 运行finder
 			cmd := exec.Command("go", "run", "./finder/finder.go", "-first", string(d.Body), "-domains", host)
 			log.Println(cmd.String())
 			// run是阻塞执行，strat是非阻塞执行
